@@ -1,19 +1,3 @@
-CENTRAL POLLUTION CONTROL BOARD,,,,,,,,,,,,,,,,,,,,,
-CONTINUOUS AMBIENT AIR QUALITY,,,,,,,,,,,,,,,,,,,,,
-"Date: Thursday, Feb 06 2025",,,,,,,,,,,,,,,,,,,,,
-Time: 04:14:58 PM,,,,,,,,,,,,,,,,,,,,,
-State,Tamil Nadu,,,,,,,,,,,,,,,,,,,,
-City,Chennai,,,,,,,,,,,,,,,,,,,,
-Station,"Velachery Res. Area, Chennai - CPCB",,,,,,,,,,,,,,,,,,,,
-Parameter,"PM2.5,PM10,NO,NO2,NOx,NH3,SO2,CO,Ozone,Benzene,Toluene,Eth-Benzene,MP-Xylene,O-Xylene,Temp,RH,WS,WD,SR,BP,VWS",,,,,,,,,,,,,,,,,,,,
-AvgPeriod,1 Hours,,,,,,,,,,,,,,,,,,,,
-From,01-01-2024T00:00:00Z 00:00,,,,,,,,,,,,,,,,,,,,
-To,06-02-2025T16:06:59Z 00:00,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,
-"Velachery Res. Area, Chennai - CPCB",,,,,,,,,,,,,,,,,,,,,
-Prescribed Standards, ,0-60,0-100,0-80,0-80,0-200,0-400,0-80,0-4,0-180,0-5,0-5,0-5,0-5,0-5,NA,NA,NA,NA,NA,NA
-Exceeding Standards, ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-Remarks,,,,,,,,,,,,,,,,,,,,,
 From Date,To Date,PM2.5,PM10,NO,NO2,NOx,NH3,SO2,CO,Ozone,Benzene,Toluene,Eth-Benzene,MP-Xylene,O-Xylene,Temp,RH,WS,WD,SR,BP
 01-01-2024 00:00,01-01-2024 01:00,28.16,81.33,2.54,17.36,19.89,17.41,11.14,1.47,20.96,1.22,2.71,0.71,0.3,0.58,None,91,1.45,173.8,None,1011.75
 01-01-2024 01:00,01-01-2024 02:00,26.44,74.32,4.26,21.18,25.43,18.32,11.09,1.41,19.48,0.54,0.88,1.45,0.64,0.31,None,91.83,1.14,38.93,None,1011.27
