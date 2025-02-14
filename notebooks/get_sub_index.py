@@ -61,19 +61,20 @@ def get_NOx_subindex(x):
         return Decimal(400) + (x - 600) * Decimal(100) / 200
 
 def get_CO_subindex(x):
-    x = Decimal(x)
-    if x <= 2000:
-        return x * Decimal(50) / 2000
-    elif x <= 4000:
-        return Decimal(50) + (x - 2000) * Decimal(50) / 2000
+    if x <= 1000:  # 1 mg/m³ = 1000 µg/m³
+        return x * 50 / 1000
+    elif x <= 2000:
+        return 50 + (x - 1000) * 50 / 1000
     elif x <= 10000:
-        return Decimal(100) + (x - 4000) * Decimal(100) / 6000
+        return 100 + (x - 2000) * 100 / 8000
     elif x <= 17000:
-        return Decimal(200) + (x - 10000) * Decimal(100) / 7000
+        return 200 + (x - 10000) * 100 / 7000
     elif x <= 34000:
-        return Decimal(300) + (x - 17000) * Decimal(100) / 17000
+        return 300 + (x - 17000) * 100 / 17000
+    elif x > 34000:
+        return 400 + (x - 34000) * 100 / 17000
     else:
-        return Decimal(400) + (x - 34000) * Decimal(100) / 17000
+        return 0
 
 def get_O3_subindex(x):
     x = Decimal(x)
