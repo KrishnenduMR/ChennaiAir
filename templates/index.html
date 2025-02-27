@@ -16,7 +16,7 @@
 	<link rel="shortcut icon" type="image/*" href="favicon.png"/>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="ChennaiAir - Forecast Air Quality Index">
+	<meta name="description" content="AirCast">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
@@ -41,10 +41,8 @@
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 		crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" href="style.css">
-	<!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
-	<script src="index.js"></script>
-	<!-- <script src="{{ url_for('static', filename='js/index.js') }}"></script> -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script> 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -52,8 +50,7 @@
 		integrity="sha512-bzjaf85dHTL4H0BvkAJ/Jbvxqf1rDj+jVpCNe3oxQj/RXSnkx1HnKhqIcmMWghxEAbXsYgddrc38saWpltlkug=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	<link rel="stylesheet" href="hover.css">
-	<!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/hover.css') }}"> -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/hover.css') }}">
 	<script>
 		$(document).ready(function () {
 			$(".hamburger").click(function () {
@@ -201,17 +198,7 @@
 	</script>
 	<nav class="navbar navbar-expand-xl navbar-dark bg-primary fixed-top blur">
 		<div class="container-fluid">
-			<!-- <a class="navbar-brand" href="" target="_blank">CEG students</a> -->
-			<div class="row" style="margin-bottom: 0px;">
-				<div class="col">
-					<div class="hamburger navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main_nav"
-						aria-expanded="false" aria-label="Toggle navigation" id="hamburgerId">
-						<span class="line"></span>
-						<span class="line"></span>
-						<span class="line"></span>
-					</div>
-				</div>
-			</div>
+			<a class="navbar-brand" href="https://github.com/KrishnenduMR/" target="_blank">ChennaiAir</a>
 		</div>
 	</nav>
 	<a id="backToTop" href="#content">
@@ -239,8 +226,7 @@
 			background-size: cover;
 			background-position: 50% 50%;
 		"></div>
-		<script src="tsParticlesHome.js">
-		// <script src="{{ url_for('static', filename='js/tsParticlesHome.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/tsParticlesHome.js') }}"></script>
 		</script>
 		<div id="particles-js" style="
 			position: fixed;
@@ -255,8 +241,7 @@
 			background-size: cover; 
 			background-position: 50% 50%;
 		"></div>
-		<!-- <script src="{{ url_for('static', filename='js/vanilla-tilt.js') }}"></script> -->
-		<script src="vanilla-tilt.js"></script> 
+		<script src="{{ url_for('static', filename='js/vanilla-tilt.js') }}"></script>
 		<script>
 			
 			particlesJS.load('particles-js', 'particlesHome.json', function () {
@@ -305,19 +290,8 @@
 				background-clip: text;
 				background-size: 400% 400%;
 				-webkit-text-fill-color: transparent;">
-					ChennaiAir
+					AirCast
 				</strong>
-				<!-- &
-				<strong style="background: linear-gradient(to left, #0033ff, #b6fbff);
-				color: white; text-align: center; 
-				animation: shine 10s linear infinite;
-				-webkit-background-clip: text;
-				background-clip: text;
-				background-size: 400% 400%;
-				-webkit-text-fill-color: transparent;
-				">
-					AQI Calculator 
-				</strong> -->
 				
 			</h1>
 			<br>
@@ -325,32 +299,8 @@
 			<br>
 			
 			<p style="color: white; font-size: 22px;">
-			<!-- <strong style="font-weight: bold;
-				background: linear-gradient(to right, #0033ff, #b6fbff);
-				color: white; text-align: center; 
-				animation: shine 10s linear infinite;
-				-webkit-background-clip: text;
-				background-clip: text;
-				background-size: 400% 400%;
-				font-size: 25px;
-				-webkit-text-fill-color: transparent;
-				">AirCast:</strong>  -->
-				Forecast the next 5 day's AQI in Chennai. A SARIMAX model trained on historical time series data <br>
+				A SARIMAX model trained on historical time series data <br>
 				that retrains daily by a Cron job with new data and forecasts next 5 day's Air Quality Index in Chennai.</p>
-			
-			<!-- <p style="color: white; font-size: 22px;"><strong style="font-weight: bold;
-				background: linear-gradient(to left, #0033ff, #b6fbff);
-				color: white; text-align: center; 
-				animation: shine 10s linear infinite;
-				-webkit-background-clip: text;
-				background-clip: text;
-				background-size: 400% 400%;
-				font-size: 25px;
-				-webkit-text-fill-color: transparent;
-				">AQI Calculator:</strong> Given pollutants as input to the Machine Learning model, predict the Air Quality Index. <br>
-				The kNN model is trained on 4 stations in Chennai on 147K rows that has 83.5% accuracy (R-Squared).
-			</p> -->
-			
 		</div>
 		
 		<div class="row">
@@ -386,8 +336,7 @@
 						</div>
 					</div>
 					<script>
-						var currentAQIFileURL = '../data/cron_job_data/sector_51_cron_output.csv';
-						// var currentAQIFileURL = '{{ url_for("static", filename="data/sector_51_cron_output.csv") }}';
+						var currentAQIFileURL = '{{ url_for("static", filename="data/sector_51_cron_output.csv") }}';
 						fetch(currentAQIFileURL)
 							.then(response => response.text())
 							.then(csvData => {
@@ -443,7 +392,10 @@
 					<div class="row">
 						<div class="col">
 							<div style="border-radius: 25px; overflow: hidden;">
-								<a href="https://www.google.com/maps/place/Alandur,+Chennai,+Tamil+Nadu" target="_blank">Open Alandur, Chennai on Google Maps</a>
+								<iframe id="maps-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14106.010907171132!2d80.22279287611976!3d12.973168667310054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526eb7ee8eb1ff%3A0x518d8c9531202a29!2sAlandur%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1709385937005!5m2!1sen!2sin"
+								height="450" style="border:0; width: -webkit-fill-available;" allowfullscreen=""
+								loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+								</iframe>
 							  </div>
 						</div>
 					</div>
@@ -476,14 +428,11 @@
 						</div>
 					</div>
 					<br>
-					<!-- Note: The results may not be accurate.  -->
-					<!-- The error percentage is <span id="forecast_mape"></span>%. -->
 					
 					<script>
 						forecast_aqi = document.getElementById('forecast_aqi');
 
-						var csvFileURL = '../data/cleaned_data/Forecasting_time_series/forecast_sector_51_daily_aqi.csv';
-						// var csvFileURL = '{{ url_for("static", filename="data/forecast_sector_51_daily_aqi.csv") }}';
+						var csvFileURL = '{{ url_for("static", filename="data/forecast_sector_51_daily_aqi.csv") }}';
 						
 						fontFamily = getFontFamily();
 
@@ -505,7 +454,7 @@
 										var parsedData = results.data;
 										aqi = parsedData.map((obj) => obj.AQI );
 										datetime = parsedData.map((obj) => obj.Date );
-										forecast_mape = parsedData[parsedData.length - 1].AQI * 0.7 ;
+										forecast_mape = parsedData[parsedData.length - 1].AQI;
 										// document.getElementById("forecast_mape").innerHTML = forecast_mape;
 										var trace = {
 											x: datetime,
@@ -549,7 +498,6 @@
 										var data = [ trace ];
 
 										var layout = {
-											// title:'Chennai - AQI Forecast',
 											grid: {
 												columns: 0,
 												rows: 0
@@ -601,200 +549,7 @@
 			</div>
 
 		</div>
-		<div class="row">
-			<div class="col">
-				<!-- <div id="div3" data-aos="fade-down" data-aos-duration="2500" data-aos-easing="ease-out-cubic"
-					data-aos-mirror="true" data-aos-once="true" style="
-					color: white;
-					/* background-color: rgb(255 255 255 / 10%); */
-					backdrop-filter: blur(4px);
-					-webkit-backdrop-filter: blur(4px);
-					border-radius: 2em;
-					padding: 1em;
-					margin: 2.3em;
-					margin-right: 1.4em;
-					">
-					<div class="row">
-						<div class="col" style="text-align: center;">
-							<h2>
-								<strong>
-									AQI Scale
-								</strong>
-							</h2>
-							<style>
-								table {
-									width: 100%;
-									border-collapse: collapse;
-									border-radius: 20px;
-            						overflow: hidden; 
-									margin-bottom: 20px;
-									font-size: 16px;
-								}
 
-								td {
-									padding: 8px;
-									text-align: left;
-								}
-
-								th {
-									background-color: rgb(255 255 255 / 10%);
-									padding: 8px;
-									text-align: left;
-									color: white;
-								}
-							</style>
-							<table>
-								<tr style="font: 18px;">
-									<th>AQI</th>
-									<th>Associated Health Impacts</th>
-								</tr>
-								<tr style="background-color: #00b050; color: black;">
-									<td>0-50 (Good)</td>
-									<td>Minimal Impact</td>
-								</tr>
-								<tr style="background-color: #92d050; color: black;">
-									<td>51-100 (Satisfactory)</td>
-									<td>May cause minor breathing discomfort to sensitive people</td>
-								</tr>
-								<tr style="background-color: #ff0; color: black;">
-									<td>101-200 (Moderate)</td>
-									<td>
-										May cause breathing discomfort to people with lung diseases (such as asthma) and discomfort to
-										people with heart diseases, children, and older adults
-									</td>
-								</tr>
-								<tr style="background-color: #ff9a00; color: black;">
-									<td>201-300 (Poor)</td>
-									<td>
-										May cause breathing discomfort to people on prolonged exposure and discomfort to people with
-										heart disease with short exposure
-									</td>
-								</tr>
-								<tr style="background-color: #f00; color: black;">
-									<td>301-400 (Very Poor)</td>
-									<td>
-										May cause respiratory illness in people on prolonged exposure. The effect may be more pronounced in
-										people with lung and heart diseases
-									</td>
-								</tr>
-								<tr style="background-color: #c00000; color: white;">
-									<td>401-500 (Severe)</td>
-									<td>
-										May cause respiratory effects even on healthy people and serious health impacts on people with
-										lung/heart diseases. The health impacts may be experienced even during light physical activity
-									</td>
-								</tr>
-							</table>
-								
-						</div>
-						
-					</div>
-				</div> -->
-				<p style="margin: 1em;"></p>
-			</div>
-			<!-- <div class="col">
-				<div id="div4" data-aos="fade-down" data-aos-duration="2500" data-aos-easing="ease-out-cubic"
-					data-aos-mirror="true" data-aos-once="true" style="
-					color: white;
-					background-color: rgb(255 255 255 / 10%);
-					backdrop-filter: blur(4px);
-					-webkit-backdrop-filter: blur(4px);
-					border-radius: 2em;
-					padding: 1em;
-					margin: 2.3em;
-					margin-right: 1.4em;
-					">
-					<div class="row">
-						<div class="col">
-							<h2>
-								<strong>
-									Calculate AQI now.
-								</strong>
-							</h2>
-							
-							<h5>Concentration in µg/m3 (except for CO)</h5>
-
-							<form method="POST" action="/predict" id="inputValues">
-								<h5>
-									<strong>PM2.5</strong> <input id="PM2.5" name="PM2.5" min="0" placeholder="Enter PM2.5" required type="number" style="margin: 20px;" value="{{ input_text_PM25 }}">
-									<strong>NO</strong>    <input id="NO" name="NO" min="0" placeholder="Enter NO" required type="number" style="margin: 20px;" value="{{ input_text_NO }}">
-									<strong>NO2</strong>   <input id="NO2" name="NO2" min="0" placeholder="Enter NO2" required type="number" style="margin: 20px;" value="{{ input_text_NO2 }}"><br><br>
-									<strong>NOx</strong>   <input id="NOx" name="NOx" min="0" placeholder="Enter NOx" required type="number" style="margin: 20px;" value="{{ input_text_NOx }}">
-									<strong>SO2</strong>   <input id="SO2" name="SO2" min="0" placeholder="Enter SO2" required type="number" style="margin: 20px;" value="{{ input_text_SO2 }}">
-									<strong>CO</strong>    <input id="CO" name="CO" min="0" placeholder="Enter CO" required type="number" style="margin: 20px;" value="{{ input_text_CO }}">
-									<br><br>
-									<div style="
-										display: flex;
-										font-size: 30px;
-										flex-direction: row;
-										align-content: center;
-										justify-content: space-evenly;
-										align-items: center;
-										">
-										<button type="submit" id="submitButton" class="btn btn-primary" style="font-size: 1.5rem;">
-											<i class="fas fa-check"></i>
-											Submit
-										</button>
-										{% if predicted_aqi %}
-										Predicted AQI is 
-										<span id="predicted_aqi_and_scale">
-											<span id="predicted_aqi_and_scale_1">{{ predicted_aqi }}</span>  ( {{predicted_aqi_scale}} )
-										</span>
-										{% endif %}
-									</div>
-									
-								</h5>
-								<br>
-								<span style="font-size: 18px;"><strong>Note:</strong> If you do not have value for any field, input it as 0.</span>
-							</form>							
-						</div>
-					</div>
-					
-					<script>
-						currentUrl = window.location.href
-						if (currentUrl.includes('/predict')) {
-							var targetElement = document.getElementById('submitButton');
-
-							if (targetElement) {
-								targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-							}
-						}
-
-						const form = document.getElementById('inputValues');
-						form.addEventListener("keyup", () => {
-							document.getElementById('submitButton').disabled = !form.checkValidity()
-						});
-						form.addEventListener("change", () => {
-							document.getElementById('submitButton').disabled = !form.checkValidity()
-						});
-						predicted_aqi = 0
-						if (document.getElementById("predicted_aqi_and_scale_1") != null)
-							predicted_aqi = document.getElementById("predicted_aqi_and_scale_1").innerHTML
-						if (predicted_aqi < 50) {
-							predicted_aqi_scale_color = "#00b050";
-						}
-						else if (predicted_aqi > 50 && predicted_aqi <= 100) {
-							predicted_aqi_scale_color = "#92d050";
-						} 
-						else if (predicted_aqi > 100 && predicted_aqi <= 200) {
-							predicted_aqi_scale_color = "#ff0";
-						}
-						else if (predicted_aqi > 200 && predicted_aqi <= 300) {
-							predicted_aqi_scale_color = "#ff9a00";
-						}
-						else if (predicted_aqi > 300 && predicted_aqi <= 400) {
-							predicted_aqi_scale_color = "#f00";
-						}
-						else if (predicted_aqi > 400 && predicted_aqi <= 5000) {
-							predicted_aqi_scale_color = "#c00000";
-						}
-						
-						if (document.getElementById("predicted_aqi_and_scale") != null)
-							document.getElementById("predicted_aqi_and_scale").style.color = predicted_aqi_scale_color
-					</script>
-				</div>
-
-		</div> -->
 
 		<div class="row">
 
@@ -823,8 +578,7 @@
 
 						historical_aqi = document.getElementById('historical_aqi');
 
-						var csvFileURL = '../data/cleaned_data/Forecasting_time_series/sector_51_daily_aqi.csv';
-						// var csvFileURL = '{{ url_for("static", filename="data/sector_51_daily_aqi.csv") }}';
+						var csvFileURL = '{{ url_for("static", filename="data/sector_51_daily_aqi.csv") }}';
 						fontFamily = getFontFamily();
 
 						fetch(csvFileURL)
@@ -835,7 +589,7 @@
 									header: true, // Assuming the first row contains headers
 									complete: function (results) {
 										var parsedData = results.data;
-										aqi = parsedData.map((obj) => obj.AQI );
+										aqi = parsedData.map((obj) => obj.AQI * 0.3 );
 										datetime = parsedData.map((obj) => obj.Date );
 										var trace = {
 											x: datetime,
@@ -850,7 +604,6 @@
 										var data = [ trace ];
 
 										var layout = {
-											// title:'Chennai - Historical Daily AQI',
 											grid: {
 												columns: 0,
 												rows: 0
@@ -900,8 +653,22 @@
 			</div>
 
 		</div>
-		
 
+
+	<footer class="page-footer font-small unique-color-dark pt-4" style="backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);">
+		
+		<div class="row" style="margin: 1em; margin-bottom: 0px; padding-bottom: 1em; justify-content: center; 
+		text-align: center; color: white;">
+			<div class="col">
+				Designed & Developed by
+				<a class="navbar-brand" href="" target="_blank"
+					style="font-size: 23px; background: white; color: black;margin-right: 5px;">Krishnendu, Akshaya and Anagha</a>©
+				<span id="getCurrentYear"></span>
+			</div>
+		</div>
+
+	</footer>
 
 	<script>
 
@@ -925,8 +692,7 @@
 	<script>
 		AOS.init();
 	</script>
-	<!-- <script src="{{ url_for('static', filename='js/vanilla-tilt.js') }}"></script> -->
-	<script src="vanilla-tilt.js"></script> 
+	<script src="{{ url_for('static', filename='js/vanilla-tilt.js') }}"></script>
 	<script type="text/javascript">
 
 		if (screen.width >= 768) {
