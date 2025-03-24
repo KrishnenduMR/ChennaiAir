@@ -336,7 +336,7 @@
 						</div>
 					</div>
 					<script>
-						var currentAQIFileURL = '{{ url_for("static", filename="data/sector_51_cron_output.csv") }}';
+						var currentAQIFileURL = '{{ url_for("static", filename="data/alandur_cron_output.csv") }}';
 						fetch(currentAQIFileURL)
 							.then(response => response.text())
 							.then(csvData => {
@@ -432,7 +432,7 @@
 					<script>
 						forecast_aqi = document.getElementById('forecast_aqi');
 
-						var csvFileURL = '{{ url_for("static", filename="data/forecast_sector_51_daily_aqi.csv") }}';
+						var csvFileURL = '{{ url_for("static", filename="data/forecast_alandur_daily_aqi.csv") }}';
 						
 						fontFamily = getFontFamily();
 
@@ -578,7 +578,7 @@
 
 						historical_aqi = document.getElementById('historical_aqi');
 
-						var csvFileURL = '{{ url_for("static", filename="data/sector_51_daily_aqi.csv") }}';
+						var csvFileURL = '{{ url_for("static", filename="data/alandur_daily_aqi.csv") }}';
 						fontFamily = getFontFamily();
 
 						fetch(csvFileURL)

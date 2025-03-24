@@ -1,0 +1,190 @@
+2025-03-24 04:25:16,539 - __main__ - INFO - station=> Velachery Res. Area, Chennai, result => ['107', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:25:16,539 - __main__ - INFO - setData function - Exception FileNotFoundError has occured for station=> Velachery Res. Area, Chennai
+2025-03-24 04:25:17,017 - __main__ - INFO - station=> Alandur Bus Depot, Chennai, result => ['47', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:25:17,017 - __main__ - INFO - setData function - Exception FileNotFoundError has occured for station=> Alandur Bus Depot, Chennai
+2025-03-24 04:25:17,505 - __main__ - INFO - station=> Manali Village, Chennai, result => ['175', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:25:17,505 - __main__ - INFO - setData function - Exception FileNotFoundError has occured for station=> Manali Village, Chennai
+2025-03-24 04:25:54,598 - __main__ - INFO - station=> Velachery Res. Area, result => ['107', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:25:54,598 - __main__ - INFO - station=> Velachery Res. Area, result => ['107', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:25:54,599 - __main__ - INFO - setData function - Exception FileNotFoundError has occured for station=> Velachery Res. Area
+2025-03-24 04:25:54,599 - __main__ - INFO - setData function - Exception FileNotFoundError has occured for station=> Velachery Res. Area
+2025-03-24 04:25:55,077 - __main__ - INFO - station=> Alandur Bus Depot, result => ['47', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:25:55,077 - __main__ - INFO - station=> Alandur Bus Depot, result => ['47', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:25:55,078 - __main__ - INFO - setData function - Exception FileNotFoundError has occured for station=> Alandur Bus Depot
+2025-03-24 04:25:55,078 - __main__ - INFO - setData function - Exception FileNotFoundError has occured for station=> Alandur Bus Depot
+2025-03-24 04:25:55,566 - __main__ - INFO - station=> Manali Village, result => ['175', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:25:55,566 - __main__ - INFO - station=> Manali Village, result => ['175', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:25:55,567 - __main__ - INFO - setData function - Exception FileNotFoundError has occured for station=> Manali Village
+2025-03-24 04:25:55,567 - __main__ - INFO - setData function - Exception FileNotFoundError has occured for station=> Manali Village
+2025-03-24 04:29:24,332 - __main__ - INFO - station=> Velachery Res. Area, result => ['107', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:29:24,332 - __main__ - INFO - station=> Velachery Res. Area, result => ['107', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:29:24,332 - __main__ - INFO - station=> Velachery Res. Area, result => ['107', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:29:24,333 - __main__ - INFO - setData function - Exception FileNotFoundError has occured for station=> Velachery Res. Area
+2025-03-24 04:29:24,333 - __main__ - INFO - setData function - Exception FileNotFoundError has occured for station=> Velachery Res. Area
+2025-03-24 04:29:24,333 - __main__ - INFO - setData function - Exception FileNotFoundError has occured for station=> Velachery Res. Area
+2025-03-24 04:29:24,807 - __main__ - INFO - station=> Alandur Bus Depot, result => ['47', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:29:24,807 - __main__ - INFO - station=> Alandur Bus Depot, result => ['47', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:29:24,807 - __main__ - INFO - station=> Alandur Bus Depot, result => ['47', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:29:24,808 - __main__ - INFO - setData function - Exception FileNotFoundError has occured for station=> Alandur Bus Depot
+2025-03-24 04:29:24,808 - __main__ - INFO - setData function - Exception FileNotFoundError has occured for station=> Alandur Bus Depot
+2025-03-24 04:29:24,808 - __main__ - INFO - setData function - Exception FileNotFoundError has occured for station=> Alandur Bus Depot
+2025-03-24 04:29:25,305 - __main__ - INFO - station=> Manali Village, result => ['175', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:29:25,305 - __main__ - INFO - station=> Manali Village, result => ['175', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:29:25,305 - __main__ - INFO - station=> Manali Village, result => ['175', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:29:25,305 - __main__ - INFO - setData function - Exception FileNotFoundError has occured for station=> Manali Village
+2025-03-24 04:29:25,305 - __main__ - INFO - setData function - Exception FileNotFoundError has occured for station=> Manali Village
+2025-03-24 04:29:25,305 - __main__ - INFO - setData function - Exception FileNotFoundError has occured for station=> Manali Village
+2025-03-24 04:31:52,589 - __main__ - INFO - station=> Velachery Res. Area, result => ['107', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:31:52,589 - __main__ - INFO - station=> Velachery Res. Area, result => ['107', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:31:52,589 - __main__ - INFO - station=> Velachery Res. Area, result => ['107', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:31:52,589 - __main__ - INFO - station=> Velachery Res. Area, result => ['107', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:31:52,590 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/velachery_cron_output.csv with Timestamp: 2025-03-24 09:00:00
+2025-03-24 04:31:52,590 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/velachery_cron_output.csv with Timestamp: 2025-03-24 09:00:00
+2025-03-24 04:31:52,590 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/velachery_cron_output.csv with Timestamp: 2025-03-24 09:00:00
+2025-03-24 04:31:52,590 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/velachery_cron_output.csv with Timestamp: 2025-03-24 09:00:00
+2025-03-24 04:31:53,065 - __main__ - INFO - station=> Alandur Bus Depot, result => ['47', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:31:53,065 - __main__ - INFO - station=> Alandur Bus Depot, result => ['47', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:31:53,065 - __main__ - INFO - station=> Alandur Bus Depot, result => ['47', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:31:53,065 - __main__ - INFO - station=> Alandur Bus Depot, result => ['47', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:31:53,066 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/alandur_cron_output.csv with Timestamp: 2025-03-24 09:00:00
+2025-03-24 04:31:53,066 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/alandur_cron_output.csv with Timestamp: 2025-03-24 09:00:00
+2025-03-24 04:31:53,066 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/alandur_cron_output.csv with Timestamp: 2025-03-24 09:00:00
+2025-03-24 04:31:53,066 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/alandur_cron_output.csv with Timestamp: 2025-03-24 09:00:00
+2025-03-24 04:31:53,555 - __main__ - INFO - station=> Manali Village, result => ['175', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:31:53,555 - __main__ - INFO - station=> Manali Village, result => ['175', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:31:53,555 - __main__ - INFO - station=> Manali Village, result => ['175', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:31:53,555 - __main__ - INFO - station=> Manali Village, result => ['175', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:31:53,556 - __main__ - INFO - setData function - Exception FileNotFoundError has occured for station=> Manali Village
+2025-03-24 04:31:53,556 - __main__ - INFO - setData function - Exception FileNotFoundError has occured for station=> Manali Village
+2025-03-24 04:31:53,556 - __main__ - INFO - setData function - Exception FileNotFoundError has occured for station=> Manali Village
+2025-03-24 04:31:53,556 - __main__ - INFO - setData function - Exception FileNotFoundError has occured for station=> Manali Village
+2025-03-24 04:33:27,966 - __main__ - INFO - station=> Velachery Res. Area, result => ['107', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:33:27,966 - __main__ - INFO - station=> Velachery Res. Area, result => ['107', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:33:27,966 - __main__ - INFO - station=> Velachery Res. Area, result => ['107', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:33:27,966 - __main__ - INFO - station=> Velachery Res. Area, result => ['107', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:33:27,966 - __main__ - INFO - station=> Velachery Res. Area, result => ['107', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:33:27,966 - __main__ - INFO - Timestamp 2025-03-24 09:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-03-24 04:33:27,966 - __main__ - INFO - Timestamp 2025-03-24 09:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-03-24 04:33:27,966 - __main__ - INFO - Timestamp 2025-03-24 09:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-03-24 04:33:27,966 - __main__ - INFO - Timestamp 2025-03-24 09:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-03-24 04:33:27,966 - __main__ - INFO - Timestamp 2025-03-24 09:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-03-24 04:33:28,457 - __main__ - INFO - station=> Alandur Bus Depot, result => ['47', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:33:28,457 - __main__ - INFO - station=> Alandur Bus Depot, result => ['47', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:33:28,457 - __main__ - INFO - station=> Alandur Bus Depot, result => ['47', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:33:28,457 - __main__ - INFO - station=> Alandur Bus Depot, result => ['47', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:33:28,457 - __main__ - INFO - station=> Alandur Bus Depot, result => ['47', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:33:28,458 - __main__ - INFO - Timestamp 2025-03-24 09:00:00 already present in ../data/cron_job_data/alandur_cron_output.csv, not appending.
+2025-03-24 04:33:28,458 - __main__ - INFO - Timestamp 2025-03-24 09:00:00 already present in ../data/cron_job_data/alandur_cron_output.csv, not appending.
+2025-03-24 04:33:28,458 - __main__ - INFO - Timestamp 2025-03-24 09:00:00 already present in ../data/cron_job_data/alandur_cron_output.csv, not appending.
+2025-03-24 04:33:28,458 - __main__ - INFO - Timestamp 2025-03-24 09:00:00 already present in ../data/cron_job_data/alandur_cron_output.csv, not appending.
+2025-03-24 04:33:28,458 - __main__ - INFO - Timestamp 2025-03-24 09:00:00 already present in ../data/cron_job_data/alandur_cron_output.csv, not appending.
+2025-03-24 04:33:28,948 - __main__ - INFO - station=> Manali Village, result => ['175', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:33:28,948 - __main__ - INFO - station=> Manali Village, result => ['175', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:33:28,948 - __main__ - INFO - station=> Manali Village, result => ['175', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:33:28,948 - __main__ - INFO - station=> Manali Village, result => ['175', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:33:28,948 - __main__ - INFO - station=> Manali Village, result => ['175', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-24 09:00:00')]
+2025-03-24 04:33:28,948 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-03-24 09:00:00
+2025-03-24 04:33:28,948 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-03-24 09:00:00
+2025-03-24 04:33:28,948 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-03-24 09:00:00
+2025-03-24 04:33:28,948 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-03-24 09:00:00
+2025-03-24 04:33:28,948 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-03-24 09:00:00
+2025-03-24 04:37:01,991 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'PM2_5', 'PM2_5_24_avg', 'Day', 'Month', 'Year', 'Week',
+       'Hour', 'PM2_5_24_avg_Sub_Index', 'AQI_calculated', 'AQI_first_diff',
+       'PM2_5_first_diff'],
+      dtype='object')
+2025-03-24 04:37:01,991 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'PM2_5', 'PM2_5_24_avg', 'Day', 'Month', 'Year', 'Week',
+       'Hour', 'PM2_5_24_avg_Sub_Index', 'AQI_calculated', 'AQI_first_diff',
+       'PM2_5_first_diff'],
+      dtype='object')
+2025-03-24 04:37:01,991 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'PM2_5', 'PM2_5_24_avg', 'Day', 'Month', 'Year', 'Week',
+       'Hour', 'PM2_5_24_avg_Sub_Index', 'AQI_calculated', 'AQI_first_diff',
+       'PM2_5_first_diff'],
+      dtype='object')
+2025-03-24 04:37:01,991 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'PM2_5', 'PM2_5_24_avg', 'Day', 'Month', 'Year', 'Week',
+       'Hour', 'PM2_5_24_avg_Sub_Index', 'AQI_calculated', 'AQI_first_diff',
+       'PM2_5_first_diff'],
+      dtype='object')
+2025-03-24 04:37:01,991 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'PM2_5', 'PM2_5_24_avg', 'Day', 'Month', 'Year', 'Week',
+       'Hour', 'PM2_5_24_avg_Sub_Index', 'AQI_calculated', 'AQI_first_diff',
+       'PM2_5_first_diff'],
+      dtype='object')
+2025-03-24 04:38:20,591 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'PM2_5', 'PM2_5_24_avg', 'Day', 'Month', 'Year', 'Week',
+       'Hour', 'PM2_5_24_avg_Sub_Index', 'AQI_calculated', 'AQI_first_diff',
+       'PM2_5_first_diff'],
+      dtype='object')
+2025-03-24 04:38:20,591 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'PM2_5', 'PM2_5_24_avg', 'Day', 'Month', 'Year', 'Week',
+       'Hour', 'PM2_5_24_avg_Sub_Index', 'AQI_calculated', 'AQI_first_diff',
+       'PM2_5_first_diff'],
+      dtype='object')
+2025-03-24 04:38:20,591 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'PM2_5', 'PM2_5_24_avg', 'Day', 'Month', 'Year', 'Week',
+       'Hour', 'PM2_5_24_avg_Sub_Index', 'AQI_calculated', 'AQI_first_diff',
+       'PM2_5_first_diff'],
+      dtype='object')
+2025-03-24 04:38:20,591 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'PM2_5', 'PM2_5_24_avg', 'Day', 'Month', 'Year', 'Week',
+       'Hour', 'PM2_5_24_avg_Sub_Index', 'AQI_calculated', 'AQI_first_diff',
+       'PM2_5_first_diff'],
+      dtype='object')
+2025-03-24 04:38:20,591 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'PM2_5', 'PM2_5_24_avg', 'Day', 'Month', 'Year', 'Week',
+       'Hour', 'PM2_5_24_avg_Sub_Index', 'AQI_calculated', 'AQI_first_diff',
+       'PM2_5_first_diff'],
+      dtype='object')
+2025-03-24 04:38:20,595 - __main__ - INFO - writeData function - Exception IndexError has occured for station=> ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:38:20,595 - __main__ - INFO - writeData function - Exception IndexError has occured for station=> ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:38:20,595 - __main__ - INFO - writeData function - Exception IndexError has occured for station=> ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:38:20,595 - __main__ - INFO - writeData function - Exception IndexError has occured for station=> ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:38:20,595 - __main__ - INFO - writeData function - Exception IndexError has occured for station=> ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:40:20,183 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'PM2_5', 'PM2_5_24_avg', 'Day', 'Month', 'Year', 'Week',
+       'Hour', 'PM2_5_24_avg_Sub_Index', 'AQI', 'AQI_first_diff',
+       'PM2_5_first_diff'],
+      dtype='object')
+2025-03-24 04:40:20,183 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'PM2_5', 'PM2_5_24_avg', 'Day', 'Month', 'Year', 'Week',
+       'Hour', 'PM2_5_24_avg_Sub_Index', 'AQI', 'AQI_first_diff',
+       'PM2_5_first_diff'],
+      dtype='object')
+2025-03-24 04:40:20,183 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'PM2_5', 'PM2_5_24_avg', 'Day', 'Month', 'Year', 'Week',
+       'Hour', 'PM2_5_24_avg_Sub_Index', 'AQI', 'AQI_first_diff',
+       'PM2_5_first_diff'],
+      dtype='object')
+2025-03-24 04:40:20,183 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'PM2_5', 'PM2_5_24_avg', 'Day', 'Month', 'Year', 'Week',
+       'Hour', 'PM2_5_24_avg_Sub_Index', 'AQI', 'AQI_first_diff',
+       'PM2_5_first_diff'],
+      dtype='object')
+2025-03-24 04:40:20,183 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'PM2_5', 'PM2_5_24_avg', 'Day', 'Month', 'Year', 'Week',
+       'Hour', 'PM2_5_24_avg_Sub_Index', 'AQI', 'AQI_first_diff',
+       'PM2_5_first_diff'],
+      dtype='object')
+2025-03-24 04:40:20,185 - __main__ - INFO - writeData function - Exception IndexError has occured for station=> ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:40:20,185 - __main__ - INFO - writeData function - Exception IndexError has occured for station=> ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:40:20,185 - __main__ - INFO - writeData function - Exception IndexError has occured for station=> ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:40:20,185 - __main__ - INFO - writeData function - Exception IndexError has occured for station=> ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:40:20,185 - __main__ - INFO - writeData function - Exception IndexError has occured for station=> ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:41:59,615 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'AQI'], dtype='object')
+2025-03-24 04:41:59,615 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'AQI'], dtype='object')
+2025-03-24 04:41:59,615 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'AQI'], dtype='object')
+2025-03-24 04:41:59,615 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'AQI'], dtype='object')
+2025-03-24 04:41:59,615 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'AQI'], dtype='object')
+2025-03-24 04:41:59,617 - __main__ - INFO - writeData function - Exception IndexError has occured for station=> ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:41:59,617 - __main__ - INFO - writeData function - Exception IndexError has occured for station=> ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:41:59,617 - __main__ - INFO - writeData function - Exception IndexError has occured for station=> ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:41:59,617 - __main__ - INFO - writeData function - Exception IndexError has occured for station=> ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:41:59,617 - __main__ - INFO - writeData function - Exception IndexError has occured for station=> ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:45:10,787 - __main__ - INFO - temp_daily_aqi columns: Index(['AQI'], dtype='object')
+2025-03-24 04:45:10,787 - __main__ - INFO - temp_daily_aqi columns: Index(['AQI'], dtype='object')
+2025-03-24 04:45:10,787 - __main__ - INFO - temp_daily_aqi columns: Index(['AQI'], dtype='object')
+2025-03-24 04:45:10,787 - __main__ - INFO - temp_daily_aqi columns: Index(['AQI'], dtype='object')
+2025-03-24 04:45:10,787 - __main__ - INFO - temp_daily_aqi columns: Index(['AQI'], dtype='object')
+2025-03-24 04:45:10,788 - __main__ - INFO - Daily AQI data has been written to ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:45:10,788 - __main__ - INFO - Daily AQI data has been written to ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:45:10,788 - __main__ - INFO - Daily AQI data has been written to ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:45:10,788 - __main__ - INFO - Daily AQI data has been written to ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:45:10,788 - __main__ - INFO - Daily AQI data has been written to ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:47:08,002 - __main__ - INFO - temp_daily_aqi columns: Index(['AQI'], dtype='object')
+2025-03-24 04:47:08,002 - __main__ - INFO - temp_daily_aqi columns: Index(['AQI'], dtype='object')
+2025-03-24 04:47:08,002 - __main__ - INFO - temp_daily_aqi columns: Index(['AQI'], dtype='object')
+2025-03-24 04:47:08,002 - __main__ - INFO - temp_daily_aqi columns: Index(['AQI'], dtype='object')
+2025-03-24 04:47:08,002 - __main__ - INFO - temp_daily_aqi columns: Index(['AQI'], dtype='object')
+2025-03-24 04:47:08,006 - __main__ - INFO - Daily AQI data has been written to ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:47:08,006 - __main__ - INFO - Daily AQI data has been written to ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:47:08,006 - __main__ - INFO - Daily AQI data has been written to ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:47:08,006 - __main__ - INFO - Daily AQI data has been written to ../data/CombinedData/alandur_daily.csv
+2025-03-24 04:47:08,006 - __main__ - INFO - Daily AQI data has been written to ../data/CombinedData/alandur_daily.csv
