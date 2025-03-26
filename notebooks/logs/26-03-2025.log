@@ -48,3 +48,37 @@
 2025-03-26 13:46:14,585 - __main__ - INFO - Timestamp 2025-03-26 19:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
 2025-03-26 13:46:14,585 - __main__ - INFO - Timestamp 2025-03-26 19:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
 2025-03-26 13:46:14,585 - __main__ - INFO - Timestamp 2025-03-26 19:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-03-26 13:57:30,214 - __main__ - INFO - station=> Velachery Res. Area, result => ['114', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-26 19:00:00')]
+2025-03-26 13:57:30,215 - __main__ - INFO - Timestamp 2025-03-26 19:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-03-26 13:57:30,693 - __main__ - INFO - station=> Alandur Bus Depot, result => ['45', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-26 19:00:00')]
+2025-03-26 13:57:30,694 - __main__ - INFO - Timestamp 2025-03-26 19:00:00 already present in ../static/data/alandur_cron_output.csv, not appending.
+2025-03-26 13:57:31,178 - __main__ - INFO - station=> Manali Village, result => ['93', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-26 19:00:00')]
+2025-03-26 13:57:31,178 - __main__ - INFO - Timestamp 2025-03-26 19:00:00 already present in ../data/cron_job_data/manali_cron_output.csv, not appending.
+2025-03-26 13:57:31,245 - __main__ - INFO - temp_daily_aqi columns: Index(['AQI'], dtype='object')
+2025-03-26 13:57:31,246 - __main__ - INFO - Daily AQI data has been written to ../static/data/alandur_daily.csv
+2025-03-26 14:04:09,193 - __main__ - INFO - temp_daily_aqi columns: Index(['AQI'], dtype='object')
+2025-03-26 14:04:09,200 - __main__ - INFO - Daily AQI data has been written to ../static/data/alandur_daily.csv
+2025-03-26 14:42:05,112 - __main__ - INFO - station=> Velachery Res. Area, result => ['102', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-26 20:00:00')]
+2025-03-26 14:42:05,112 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/velachery_cron_output.csv with Timestamp: 2025-03-26 20:00:00
+2025-03-26 14:42:05,588 - __main__ - INFO - station=> Alandur Bus Depot, result => ['48', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-26 20:00:00')]
+2025-03-26 14:42:05,589 - __main__ - INFO - The hourly data has been written to ../static/data/alandur_cron_output.csv with Timestamp: 2025-03-26 20:00:00
+2025-03-26 14:42:06,075 - __main__ - INFO - station=> Manali Village, result => ['111', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-26 20:00:00')]
+2025-03-26 14:42:06,075 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-03-26 20:00:00
+2025-03-26 14:42:06,110 - __main__ - INFO - temp_daily_aqi columns: Index(['AQI'], dtype='object')
+2025-03-26 14:42:06,111 - __main__ - INFO - Daily AQI data has been written to ../static/data/alandur_daily.csv
+2025-03-26 14:57:18,897 - __main__ - INFO - station=> Velachery Res. Area, result => ['100', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-26 20:00:00')]
+2025-03-26 14:57:18,898 - __main__ - INFO - Timestamp 2025-03-26 20:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-03-26 14:57:19,376 - __main__ - INFO - station=> Alandur Bus Depot, result => ['48', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-26 20:00:00')]
+2025-03-26 14:57:19,376 - __main__ - INFO - Timestamp 2025-03-26 20:00:00 already present in ../static/data/alandur_cron_output.csv, not appending.
+2025-03-26 14:57:19,860 - __main__ - INFO - station=> Manali Village, result => ['112', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-26 20:00:00')]
+2025-03-26 14:57:19,861 - __main__ - INFO - Timestamp 2025-03-26 20:00:00 already present in ../data/cron_job_data/manali_cron_output.csv, not appending.
+2025-03-26 14:57:19,940 - __main__ - INFO - temp_daily_aqi columns: Index(['AQI'], dtype='object')
+2025-03-26 14:57:19,941 - __main__ - INFO - Daily AQI data has been written to ../static/data/alandur_daily.csv
+2025-03-26 15:59:27,948 - __main__ - INFO - station=> Velachery Res. Area, result => ['88', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-26 21:00:00')]
+2025-03-26 15:59:27,951 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/velachery_cron_output.csv with Timestamp: 2025-03-26 21:00:00
+2025-03-26 15:59:28,443 - __main__ - INFO - station=> Alandur Bus Depot, result => ['48', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-26 21:00:00')]
+2025-03-26 15:59:28,444 - __main__ - INFO - The hourly data has been written to ../static/data/alandur_cron_output.csv with Timestamp: 2025-03-26 21:00:00
+2025-03-26 15:59:28,929 - __main__ - INFO - station=> Manali Village, result => ['115', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-26 21:00:00')]
+2025-03-26 15:59:28,930 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-03-26 21:00:00
+2025-03-26 15:59:28,968 - __main__ - INFO - temp_daily_aqi columns: Index(['AQI'], dtype='object')
+2025-03-26 15:59:28,969 - __main__ - INFO - Daily AQI data has been written to ../static/data/alandur_daily.csv
