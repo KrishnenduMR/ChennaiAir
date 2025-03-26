@@ -1,0 +1,50 @@
+2025-03-26 13:09:17,778 - __main__ - INFO - station=> Velachery Res. Area, result => ['128', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-26 18:00:00')]
+2025-03-26 13:09:17,779 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/velachery_cron_output.csv with Timestamp: 2025-03-26 18:00:00
+2025-03-26 13:09:18,297 - __main__ - INFO - station=> Alandur Bus Depot, result => ['29', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-26 18:00:00')]
+2025-03-26 13:09:18,298 - __main__ - INFO - The hourly data has been written to ../static/data/alandur_cron_output.csv with Timestamp: 2025-03-26 18:00:00
+2025-03-26 13:09:18,788 - __main__ - INFO - station=> Manali Village, result => ['68', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-26 18:00:00')]
+2025-03-26 13:09:18,788 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-03-26 18:00:00
+2025-03-26 13:16:00,025 - __main__ - INFO - station=> Velachery Res. Area, result => ['127', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-26 18:00:00')]
+2025-03-26 13:16:00,025 - __main__ - INFO - station=> Velachery Res. Area, result => ['127', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-26 18:00:00')]
+2025-03-26 13:16:00,025 - __main__ - INFO - Timestamp 2025-03-26 18:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-03-26 13:16:00,025 - __main__ - INFO - Timestamp 2025-03-26 18:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-03-26 13:16:00,523 - __main__ - INFO - station=> Alandur Bus Depot, result => ['29', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-26 18:00:00')]
+2025-03-26 13:16:00,523 - __main__ - INFO - station=> Alandur Bus Depot, result => ['29', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-26 18:00:00')]
+2025-03-26 13:16:00,524 - __main__ - INFO - Timestamp 2025-03-26 18:00:00 already present in ../static/data/alandur_cron_output.csv, not appending.
+2025-03-26 13:16:00,524 - __main__ - INFO - Timestamp 2025-03-26 18:00:00 already present in ../static/data/alandur_cron_output.csv, not appending.
+2025-03-26 13:16:01,004 - __main__ - INFO - station=> Manali Village, result => ['71', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-26 18:00:00')]
+2025-03-26 13:16:01,004 - __main__ - INFO - station=> Manali Village, result => ['71', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-26 18:00:00')]
+2025-03-26 13:16:01,004 - __main__ - INFO - Timestamp 2025-03-26 18:00:00 already present in ../data/cron_job_data/manali_cron_output.csv, not appending.
+2025-03-26 13:16:01,004 - __main__ - INFO - Timestamp 2025-03-26 18:00:00 already present in ../data/cron_job_data/manali_cron_output.csv, not appending.
+2025-03-26 13:31:39,042 - __main__ - INFO - station=> Velachery Res. Area, result => ['127', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-26 18:00:00')]
+2025-03-26 13:31:39,042 - __main__ - INFO - Timestamp 2025-03-26 18:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-03-26 13:31:39,521 - __main__ - INFO - station=> Alandur Bus Depot, result => ['29', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-26 18:00:00')]
+2025-03-26 13:31:39,521 - __main__ - INFO - Timestamp 2025-03-26 18:00:00 already present in ../static/data/alandur_cron_output.csv, not appending.
+2025-03-26 13:31:40,001 - __main__ - INFO - station=> Manali Village, result => ['71', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-26 18:00:00')]
+2025-03-26 13:31:40,001 - __main__ - INFO - Timestamp 2025-03-26 18:00:00 already present in ../data/cron_job_data/manali_cron_output.csv, not appending.
+2025-03-26 13:38:20,082 - __main__ - INFO - station=> Velachery Res. Area, result => ['116', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-26 19:00:00')]
+2025-03-26 13:38:20,082 - __main__ - INFO - station=> Velachery Res. Area, result => ['116', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-26 19:00:00')]
+2025-03-26 13:38:20,083 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/velachery_cron_output.csv with Timestamp: 2025-03-26 19:00:00
+2025-03-26 13:38:20,083 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/velachery_cron_output.csv with Timestamp: 2025-03-26 19:00:00
+2025-03-26 13:38:20,577 - __main__ - INFO - station=> Alandur Bus Depot, result => ['44', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-26 19:00:00')]
+2025-03-26 13:38:20,577 - __main__ - INFO - station=> Alandur Bus Depot, result => ['44', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-26 19:00:00')]
+2025-03-26 13:38:20,578 - __main__ - INFO - The hourly data has been written to ../static/data/alandur_cron_output.csv with Timestamp: 2025-03-26 19:00:00
+2025-03-26 13:38:20,578 - __main__ - INFO - The hourly data has been written to ../static/data/alandur_cron_output.csv with Timestamp: 2025-03-26 19:00:00
+2025-03-26 13:38:21,060 - __main__ - INFO - station=> Manali Village, result => ['90', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-26 19:00:00')]
+2025-03-26 13:38:21,060 - __main__ - INFO - station=> Manali Village, result => ['90', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-26 19:00:00')]
+2025-03-26 13:38:21,060 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-03-26 19:00:00
+2025-03-26 13:38:21,060 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-03-26 19:00:00
+2025-03-26 13:38:53,567 - __main__ - INFO - station=> Velachery Res. Area, result => ['116', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-26 19:00:00')]
+2025-03-26 13:38:53,567 - __main__ - INFO - station=> Velachery Res. Area, result => ['116', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-26 19:00:00')]
+2025-03-26 13:38:53,567 - __main__ - INFO - station=> Velachery Res. Area, result => ['116', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-26 19:00:00')]
+2025-03-26 13:38:53,570 - __main__ - INFO - Timestamp 2025-03-26 19:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-03-26 13:38:53,570 - __main__ - INFO - Timestamp 2025-03-26 19:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-03-26 13:38:53,570 - __main__ - INFO - Timestamp 2025-03-26 19:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-03-26 13:46:14,584 - __main__ - INFO - station=> Velachery Res. Area, result => ['116', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-26 19:00:00')]
+2025-03-26 13:46:14,584 - __main__ - INFO - station=> Velachery Res. Area, result => ['116', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-26 19:00:00')]
+2025-03-26 13:46:14,584 - __main__ - INFO - station=> Velachery Res. Area, result => ['116', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-26 19:00:00')]
+2025-03-26 13:46:14,584 - __main__ - INFO - station=> Velachery Res. Area, result => ['116', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-26 19:00:00')]
+2025-03-26 13:46:14,585 - __main__ - INFO - Timestamp 2025-03-26 19:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-03-26 13:46:14,585 - __main__ - INFO - Timestamp 2025-03-26 19:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-03-26 13:46:14,585 - __main__ - INFO - Timestamp 2025-03-26 19:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-03-26 13:46:14,585 - __main__ - INFO - Timestamp 2025-03-26 19:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
