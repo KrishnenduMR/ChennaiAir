@@ -9,19 +9,22 @@ from datetime import datetime, timedelta
 from statsmodels.tsa.statespace.sarimax import SARIMAX
 from sklearn.metrics import mean_absolute_percentage_error
 
+
+REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+
 # 🔹 Station Information
 Velachery = "Velachery Res. Area"
-Velachery_OUTPUT = "../data/cron_job_data/velachery_cron_output.csv"
+Velachery_OUTPUT = "/data/cron_job_data/velachery_cron_output.csv"
 
 alandur = "Alandur Bus Depot"
-alandur_OUTPUT = "../static/data/alandur_cron_output.csv"
-alandur_DAILY_AQI = '../static/data/alandur_daily.csv'
+alandur_OUTPUT = "/static/data/alandur_cron_output.csv"
+alandur_DAILY_AQI = '/static/data/alandur_daily.csv'
 
 Manali = "Manali Village"
-Manali_OUTPUT = "../data/cron_job_data/manali_cron_output.csv"
+Manali_OUTPUT = "/data/cron_job_data/manali_cron_output.csv"
 
 stations = [(Velachery, Velachery_OUTPUT), (alandur, alandur_OUTPUT), (Manali, Manali_OUTPUT)]
-FORECAST_alandur_DAILY_AQI = '../static/data/forecast_alandur_daily_aqi.csv'
+FORECAST_alandur_DAILY_AQI = '/static/data/forecast_alandur_daily_aqi.csv'
 
 ORDER, SEASONAL_ORDER = (1, 0, 1), (1, 0, 1, 7)
 
