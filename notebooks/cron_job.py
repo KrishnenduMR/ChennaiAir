@@ -14,7 +14,7 @@ REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
 # 🔹 Station Information
 Velachery = "Velachery Res. Area"
-VVelachery_OUTPUT = os.path.join(REPO_ROOT, "data/cron_job_data/velachery_cron_output.csv")
+Velachery_OUTPUT = os.path.join(REPO_ROOT, "data/cron_job_data/velachery_cron_output.csv")
 
 alandur = "Alandur Bus Depot"
 alandur_OUTPUT = os.path.join(REPO_ROOT, "static/data/alandur_cron_output.csv")
