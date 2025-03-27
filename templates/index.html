@@ -416,7 +416,7 @@
 									complete: function (results) {
 										var parsedData = results.data;
 										aqi = parsedData.map((obj) => obj.AQI );
-										datetime = parsedData.map((obj) => obj.Date );
+										datetime = parsedData.map((obj) => obj.Datetime );
 										forecast_mape = parsedData[parsedData.length - 1].AQI;
 										// document.getElementById("forecast_mape").innerHTML = forecast_mape;
 										var trace = {
@@ -541,7 +541,7 @@
 
 						historical_aqi = document.getElementById('historical_aqi');
 
-						var csvFileURL = '{{ url_for("static", filename="data/alandur_daily_aqi.csv") }}';
+						var csvFileURL = '{{ url_for("static", filename="data/alandur_daily.csv") }}';
 						fontFamily = getFontFamily();
 
 						fetch(csvFileURL)
@@ -553,7 +553,7 @@
 									complete: function (results) {
 										var parsedData = results.data;
 										aqi = parsedData.map((obj) => obj.AQI * 0.3 );
-										datetime = parsedData.map((obj) => obj.Date );
+										datetime = parsedData.map((obj) => obj.Datetime );
 										var trace = {
 											x: datetime,
 											y: aqi,
