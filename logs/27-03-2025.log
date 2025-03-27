@@ -58,3 +58,63 @@ Traceback (most recent call last):
     handle = open(
              ^^^^^
 FileNotFoundError: [Errno 2] No such file or directory: '/static/data/alandur_daily.csv'
+2025-03-27 13:31:23,751 - __main__ - ERROR - Exception in setData for Velachery Res. Area: [Errno 2] No such file or directory: '/data/cron_job_data/velachery_cron_output.csv'
+Traceback (most recent call last):
+  File "/home/runner/work/ChennaiAir/ChennaiAir/./notebooks/cron_job.py", line 82, in setData
+    with open(output_file, 'a', newline='') as csv_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/data/cron_job_data/velachery_cron_output.csv'
+2025-03-27 13:31:24,353 - __main__ - ERROR - Exception in setData for Alandur Bus Depot: [Errno 2] No such file or directory: '/static/data/alandur_cron_output.csv'
+Traceback (most recent call last):
+  File "/home/runner/work/ChennaiAir/ChennaiAir/./notebooks/cron_job.py", line 82, in setData
+    with open(output_file, 'a', newline='') as csv_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/static/data/alandur_cron_output.csv'
+2025-03-27 13:31:24,960 - __main__ - ERROR - Exception in setData for Manali Village: [Errno 2] No such file or directory: '/data/cron_job_data/manali_cron_output.csv'
+Traceback (most recent call last):
+  File "/home/runner/work/ChennaiAir/ChennaiAir/./notebooks/cron_job.py", line 82, in setData
+    with open(output_file, 'a', newline='') as csv_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/data/cron_job_data/manali_cron_output.csv'
+2025-03-27 13:31:24,961 - __main__ - ERROR - Exception in writeData: [Errno 2] No such file or directory: '/static/data/alandur_cron_output.csv'
+Traceback (most recent call last):
+  File "/home/runner/work/ChennaiAir/ChennaiAir/./notebooks/cron_job.py", line 98, in writeData
+    df_api = pd.read_csv(station_hourly_aqi)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/static/data/alandur_cron_output.csv'
+2025-03-27 13:31:24,962 - __main__ - ERROR - Exception in retrain_model: [Errno 2] No such file or directory: '/static/data/alandur_daily.csv'
+Traceback (most recent call last):
+  File "/home/runner/work/ChennaiAir/ChennaiAir/./notebooks/cron_job.py", line 135, in retrain_model
+    df = pd.read_csv(station_daily_aqi)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.9/x64/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/static/data/alandur_daily.csv'
