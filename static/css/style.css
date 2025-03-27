@@ -29,7 +29,7 @@ a:focus {
 }
 
 .bg-primary {
-    background-color: #090909 !important;
+    background-color: #558bca !important;
 }
 
 .dropdown-menu {
@@ -105,34 +105,6 @@ info:not(:disabled):not(.disabled):active,
     text-align: center;
     color: rgb(0, 0, 0);
     justify-content: center;
-}
-
-.navbar-dark .navbar-brand {
-    color: black;
-}
-
-.navbar-dark .navbar-brand:hover,
-.navbar-dark .navbar-brand:focus {
-    color: white;
-    background: black;
-}
-
-.navbar-brand {
-    display: inline-block;
-    padding: .4rem;
-    margin-right: 1rem;
-    /* font-size: 18px; */
-    background: white;
-    border-radius: 2em;
-    line-height: inherit;
-    white-space: nowrap;
-}
-
-.navbar-dark .navbar-nav .active>.nav-link,
-.navbar-dark .navbar-nav .nav-link.active {
-    color: #000;
-    background: white;
-    border-radius: 2em;
 }
 
 #backToTop {
@@ -488,6 +460,22 @@ input {
     padding-left: 23px;
 }
 
+#sendEmailButton {
+    border-radius: 2em;
+    padding-right: 23px;
+    padding-left: 23px;
+    margin-bottom: 50px;
+    width: 200px;
+    height: 50px;
+    background: rgb(172, 23, 23);
+    color: white;
+    align-self: center;
+    margin-left: auto;  /* Works inside a flex container */
+    float: right;       /* Alternative for non-flex containers */
+    margin-right: 50px;
+}
+
+
 @keyframes shine {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
@@ -510,4 +498,67 @@ input {
     to {
           --angle: 360deg;
       }
+}
+/* Ticker Styles */
+.ticker-container {
+    width: 100%;
+    overflow: hidden;
+    background: #221fe4; /* White background */
+    color: white; /* Black text */
+    position: fixed;
+    top: 0; /* At the very top */
+    z-index: 1050; /* Above navbar */
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+/* Button inside ticker */
+.ticker-button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    flex-shrink: 0; /* Prevents the button from shrinking */
+}
+
+/* Scrolling ticker content */
+.ticker-content {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 10px; /* Space between button and ticker */
+    flex-grow: 1; /* Takes up remaining space */
+    animation: ticker-scroll 7s linear infinite; /* Slow scrolling */
+    padding-bottom: 0%;
+}
+
+.ticker {
+    font-weight: bold;
+    align-self: center;
+    margin-top: 3px;
+    color: #fff;
+    font-size: 22px;
+}
+
+@keyframes ticker-scroll {
+    from { transform: translateX(100%); }
+    to { transform: translateX(5%); }
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 50px; /* Below ticker */
+    width: 100%;
+    background: black !important; /* Black background */
+    z-index: 1000; /* Below ticker */
+}
+
+.navbar a {
+    color: white !important;
 }
