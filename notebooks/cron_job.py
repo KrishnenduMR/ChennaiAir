@@ -95,7 +95,7 @@ def writeData(station_hourly_aqi, station_daily_aqi):
         df_api = pd.read_csv(station_hourly_aqi)
         df_api['datetime'] = pd.to_datetime(df_api['datetime'])
         df_api.set_index('datetime', inplace=True)
-        df_daily = df_api['AQI'].resample('D').mean().round().dropna()
+        df_daily = df_api['AQI'].resample('D').mean()
 
         # Read existing daily data
         if os.path.exists(station_daily_aqi):
@@ -129,10 +129,20 @@ def writeData(station_hourly_aqi, station_daily_aqi):
 # 🔹 Retrain SARIMA Model & Forecast
 def retrain_model(order, seasonal_order, station_daily_aqi):
     try:
-        df = pd.read_csv(station_daily_aqi, parse_dates=['Datetime'], index_col='Datetime')
-        df = df.asfreq('D')  # ✅ Explicitly set daily frequency
-        df.ffill(inplace=True)  # Fill missing values
+        df = pd.read_csv(station_daily_aqi)
 
+        # Debugging step
+        print("Columns in CSV:", df.columns)
+        
+        # Ensure 'Datetime' column exists
+        df.columns = df.columns.str.strip()  # Remove unwanted spaces
+        if 'Datetime' not in df.columns:
+            logger.error(f"Column 'Datetime' not found in {station_daily_aqi}. Available columns: {df.columns}")
+            return
+        
+        df['Datetime'] = pd.to_datetime(df['Datetime'])
+        df.set_index('Datetime', inplace=True)
+        df.ffill(inplace=True)  # Fill missing values
 
         # Split data
         train_end = df.index[-1] - timedelta(days=5)
@@ -151,10 +161,16 @@ def retrain_model(order, seasonal_order, station_daily_aqi):
             full_model_fit = full_model.fit()
             future_forecast = full_model_fit.forecast(5)
 
-            # ✅ Fix: Ensure forecast is written correctly
-            forecast_df = pd.DataFrame({'Datetime': future_forecast.index, 'AQI': future_forecast.values})
-            forecast_df.to_csv(FORECAST_alandur_DAILY_AQI, index=False)
+            # ✅ Fix: Proper date index for forecast
+            future_dates = pd.date_range(start=df.index[-1] + pd.Timedelta(days=1), periods=5, freq='D')
 
+            # ✅ Round AQI values
+            forecast_df = pd.DataFrame({
+                'Datetime': future_dates, 
+                'AQI': np.round(future_forecast.values, 2)
+            })
+
+            forecast_df.to_csv(FORECAST_alandur_DAILY_AQI, index=False)
             logger.info(f"Forecast written to {FORECAST_alandur_DAILY_AQI}")
 
     except Exception as e:
@@ -168,6 +184,6 @@ if __name__ == "__main__":
     for station, station_location in stations:
         setData(station, station_location, logger, TOKEN)
 
-    if datetime.utcnow().hour == 20:
-        writeData(alandur_OUTPUT, alandur_DAILY_AQI)
-        retrain_model(ORDER, SEASONAL_ORDER, alandur_DAILY_AQI)
+    # if datetime.utcnow().hour == 20:
+    writeData(alandur_OUTPUT, alandur_DAILY_AQI)
+    retrain_model(ORDER, SEASONAL_ORDER, alandur_DAILY_AQI)
