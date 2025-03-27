@@ -6,4 +6,4 @@ torchvision==0.18.0
 tqdm==4.66.4
 requests
 statsmodels
-sklearn
+scikit-learn
