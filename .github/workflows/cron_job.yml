@@ -30,7 +30,7 @@ jobs:
           git pull origin main || true  # Ignore errors if there's nothing to pull
 
       - name: Run cron job script
-        run: python ../notebooks/cron_job.py
+        run: python /notebooks/cron_job.py
 
       - name: Commit and push changes
         run: |
