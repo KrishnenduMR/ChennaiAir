@@ -52,3 +52,6 @@
 2025-03-29 18:28:24,012 - __main__ - INFO - Data written for Velachery Res. Area: ['109', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-29 23:00:00')]
 2025-03-29 18:28:24,862 - __main__ - INFO - Data written for Alandur Bus Depot: ['51', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-29 23:00:00')]
 2025-03-29 18:28:25,765 - __main__ - INFO - Data written for Manali Village: ['156', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-29 23:00:00')]
+2025-03-29 19:18:48,574 - __main__ - INFO - Data written for Velachery Res. Area: ['101', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-30 00:00:00')]
+2025-03-29 19:18:49,231 - __main__ - INFO - Data written for Alandur Bus Depot: ['49', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-30 00:00:00')]
+2025-03-29 19:18:49,726 - __main__ - INFO - Data written for Manali Village: ['156', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-30 00:00:00')]
