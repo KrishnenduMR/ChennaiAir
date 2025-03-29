@@ -60,3 +60,6 @@
 2025-03-29 20:22:13,166 - __main__ - INFO - Data written for Manali Village: ['154', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-30 02:00:00')]
 2025-03-29 20:22:13,178 - __main__ - INFO - Daily AQI written for 2025-03-28
 2025-03-29 20:22:14,427 - __main__ - INFO - Model retrained, MAPE: 69.18160282859675%
+2025-03-29 21:19:55,555 - __main__ - INFO - Data written for Velachery Res. Area: ['88', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-30 03:00:00')]
+2025-03-29 21:19:56,347 - __main__ - INFO - Data written for Alandur Bus Depot: ['50', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-30 02:00:00')]
+2025-03-29 21:19:57,025 - __main__ - INFO - Data written for Manali Village: ['144', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-30 03:00:00')]
