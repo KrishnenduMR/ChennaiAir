@@ -64,3 +64,6 @@
 2025-03-30 22:20:37,579 - __main__ - INFO - Data written for Velachery Res. Area: ['72', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-31 03:00:00')]
 2025-03-30 22:20:38,021 - __main__ - INFO - Data written for Alandur Bus Depot: ['38', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-03-31 03:00:00')]
 2025-03-30 22:20:38,484 - __main__ - INFO - Data written for Manali Village: ['97', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-31 03:00:00')]
+2025-03-30 23:21:28,999 - __main__ - INFO - Data written for Velachery Res. Area: ['62', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-03-31 04:00:00')]
+2025-03-30 23:21:29,677 - __main__ - INFO - Invalid AQI value for Alandur Bus Depot
+2025-03-30 23:21:30,748 - __main__ - INFO - Data written for Manali Village: ['84', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-03-31 04:00:00')]
