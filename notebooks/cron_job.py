@@ -8,6 +8,7 @@ import numpy as np
 from datetime import datetime, timedelta
 from statsmodels.tsa.statespace.sarimax import SARIMAX
 from sklearn.metrics import mean_absolute_percentage_error
+from pytz import timezone 
 
 
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -26,7 +27,7 @@ Manali_OUTPUT = os.path.join(REPO_ROOT, "data/cron_job_data/manali_cron_output.c
 stations = [(Velachery, Velachery_OUTPUT), (alandur, alandur_OUTPUT), (Manali, Manali_OUTPUT)]
 FORECAST_alandur_DAILY_AQI = os.path.join(REPO_ROOT, "static/data/forecast_alandur_daily_aqi.csv")
 
-ORDER, SEASONAL_ORDER = (1, 0, 1), (1, 0, 1, 7)
+ORDER, SEASONAL_ORDER = (0, 0, 15),  (0, 0, 0, 7)
 
 # 🔹 API Token
 def get_api_token():
@@ -107,9 +108,15 @@ def writeData(station_hourly_aqi, station_daily_aqi):
         else:
             df_existing = pd.DataFrame(columns=['AQI'])
 
-        today = datetime.now().date()
-        yesterday = today - timedelta(days=1)
-        yesterday_ts = pd.Timestamp(yesterday)  # ✅ Convert to Timestamp
+        # ✅ Set local timezone (adjust as needed)
+        local_tz = timezone("Asia/Kolkata")  # Set to your timezone
+
+        # ✅ Use localized datetime
+        now_local = datetime.now(local_tz)
+        yesterday = (now_local - timedelta(days=1)).date()
+
+        # ✅ Ensure timestamp matches local timezone
+        yesterday_ts = pd.Timestamp(yesterday, tz=local_tz)
 
         if yesterday_ts not in df_existing.index:
             if yesterday_ts in df_daily.index:  # ✅ Ensure yesterday's data exists
@@ -159,7 +166,7 @@ def retrain_model(order, seasonal_order, station_daily_aqi):
 
         logger.info(f"Model retrained, MAPE: {MAPE}%")
 
-        if MAPE <= 30:
+        if MAPE :
             full_model = SARIMAX(df['AQI'], order=order, seasonal_order=seasonal_order)
             full_model_fit = full_model.fit()
             future_forecast = full_model_fit.forecast(5)
@@ -187,6 +194,6 @@ if __name__ == "__main__":
     for station, station_location in stations:
         setData(station, station_location, logger, TOKEN)
 
-    if datetime.utcnow().hour == 20:
+    if datetime.utcnow().hour == 21:
         writeData(alandur_OUTPUT, alandur_DAILY_AQI)
         retrain_model(ORDER, SEASONAL_ORDER, alandur_DAILY_AQI)
