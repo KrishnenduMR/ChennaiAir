@@ -194,6 +194,6 @@ if __name__ == "__main__":
     for station, station_location in stations:
         setData(station, station_location, logger, TOKEN)
 
-    if datetime.utcnow().hour == 21:
+    if datetime.utcnow().hour == 4:
         writeData(alandur_OUTPUT, alandur_DAILY_AQI)
         retrain_model(ORDER, SEASONAL_ORDER, alandur_DAILY_AQI)
