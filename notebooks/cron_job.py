@@ -17,24 +17,21 @@ from statsmodels.tsa.statespace.sarimax import SARIMAX
 # Metrics for model evaluation
 from sklearn.metrics import mean_absolute_error, mean_absolute_percentage_error
 
-
-REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-
 # 🔹 Station Information
 Velachery = "Velachery Res. Area"
-Velachery_OUTPUT = os.path.join(REPO_ROOT, "data/cron_job_data/velachery_cron_output.csv")
+Velachery_OUTPUT = "../data/cron_job_data/velachery_cron_output.csv"
 
 alandur = "Alandur Bus Depot"
-alandur_OUTPUT = os.path.join(REPO_ROOT, "static/data/alandur_cron_output.csv")
-alandur_DAILY_AQI = os.path.join(REPO_ROOT, "static/data/alandur_daily.csv")
+alandur_OUTPUT = "../static/data/alandur_cron_output.csv"
+alandur_DAILY_AQI = "../static/data/alandur_daily.csv"
 
 Manali = "Manali Village"
-Manali_OUTPUT = os.path.join(REPO_ROOT, "data/cron_job_data/manali_cron_output.csv")
+Manali_OUTPUT = "../data/cron_job_data/manali_cron_output.csv"
 
 stations = [(Velachery, Velachery_OUTPUT), (alandur, alandur_OUTPUT), (Manali, Manali_OUTPUT)]
-FORECAST_alandur_DAILY_AQI = os.path.join(REPO_ROOT, "static/data/forecast_alandur_daily_aqi.csv")
+FORECAST_alandur_DAILY_AQI = "../static/data/forecast_alandur_daily_aqi.csv"
 
-ORDER, SEASONAL_ORDER = (0, 0, 15),  (0, 0, 0, 7)
+ORDER, SEASONAL_ORDER = (0, 3, 15),  (0, 0, 0, 7)
 
 # 🔹 API Token
 def get_api_token():
@@ -101,13 +98,12 @@ def setData(station, output_file, logger, TOKEN):
                 logger.info(f'The hourly data has been written to {csv_file_path} with Timestamp: {new_timestamp}')
             else:
                 print(f'Timestamp {new_timestamp} already present in {csv_file_path}, not appending.')
-            #     logger.info(f'Timestamp {new_timestamp} already present in {csv_file_path}, not appending.')
+                logger.info(f'Timestamp {new_timestamp} already present in {csv_file_path}, not appending.')
         else:
             print(f"setData function - Error: {response.status_code} - {response.text}")
             logger.info(f"setData function - Error: {response.status_code} - {response.text}")
     except Exception as e:
         print(f"setData function - Exception {type(e).__name__} has occured for station=> {station}")
-        logger.info(f"setData function - Exception {type(e).__name__} has occured for station=> {station}")
         
 
 # 🔹 Retrain SARIMA Model & Forecast
@@ -123,7 +119,6 @@ def retrain_model(order, seasonal_order, station_daily_aqi):
     daily_aqi = pd.read_csv(station_daily_aqi)
     daily_aqi['Datetime'] = pd.to_datetime(daily_aqi['Datetime'])
     daily_aqi.set_index('Datetime', inplace=True)
-    daily_aqi.drop(columns=['Unnamed: 0'], inplace=True)
     daily_aqi.index = pd.to_datetime(daily_aqi.index)
     daily_aqi.ffill(inplace=True)
 
@@ -159,8 +154,8 @@ def retrain_model(order, seasonal_order, station_daily_aqi):
     model_fit = model.fit()
     predictions = model_fit.forecast(len(test_data))
     predictions = pd.Series(predictions)
-    print(f"\n\nForecast=> {predictions}")
-    logger.info(f"Forecast=> {predictions}")
+    print(f"\n\nForecast=> \n{predictions}")
+    logger.info(f"Forecast=> \n{predictions}")
 
     # Save the forecast
     try:
@@ -246,9 +241,9 @@ if __name__ == "__main__":
     print(f"datetime.now()=> {datetime.now()}")
     # logger.info(f"datetime.now()=> {datetime.now()}")
     
-    daily_AQI = pd.read_csv(alandur_DAILY_AQI)
+    daily_AQI = pd.read_csv(alandur_DAILY_AQI, parse_dates=["Datetime"])
     daily_AQI['Datetime'] = pd.to_datetime(daily_AQI['Datetime'])
-    daily_AQI.set_index('Datetie', inplace=True)
+    daily_AQI.set_index('Datetime', inplace=True)
     today = datetime.now().date()
     yesterday = today - timedelta(days=1)
     yesterday_present = daily_AQI.index[-1] == pd.Timestamp(yesterday)
