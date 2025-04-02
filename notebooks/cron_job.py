@@ -67,7 +67,7 @@ def setData(station, output_file, logger, TOKEN):
 
         if response.status_code == 200:
             res = response.json()
-             result = []
+            result = []
             if station.lower() in (res["data"][0]['station']['name']).lower():
                 result.append(res["data"][0]['aqi'])
                 result.append(res["data"][0]['station']['name'])
