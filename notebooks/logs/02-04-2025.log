@@ -4,3 +4,9 @@
 2025-04-02 03:03:45,045 - __main__ - INFO - Data written for Velachery Res. Area: ['80', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-04-02 08:00:00')]
 2025-04-02 03:03:46,040 - __main__ - INFO - Data written for Alandur Bus Depot: ['41', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-04-02 08:00:00')]
 2025-04-02 03:03:46,950 - __main__ - INFO - Data written for Manali Village: ['158', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-04-02 08:00:00')]
+2025-04-02 04:27:08,199 - __main__ - INFO - Data written for Velachery Res. Area: ['71', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-04-02 09:00:00')]
+2025-04-02 04:27:08,795 - __main__ - INFO - Data written for Alandur Bus Depot: ['39', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-04-02 09:00:00')]
+2025-04-02 04:27:09,389 - __main__ - INFO - Data written for Manali Village: ['152', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-04-02 09:00:00')]
+2025-04-02 04:27:09,408 - __main__ - INFO - No AQI data available for 2025-04-01
+2025-04-02 04:27:14,975 - __main__ - INFO - Model retrained, MAPE: 33.87799263034799%
+2025-04-02 04:27:21,051 - __main__ - INFO - Forecast written to /home/runner/work/ChennaiAir/ChennaiAir/static/data/forecast_alandur_daily_aqi.csv
