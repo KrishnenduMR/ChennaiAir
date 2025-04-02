@@ -72,7 +72,6 @@ def setData(station, output_file, logger, TOKEN):
                 result.append(res["data"][0]['aqi'])
                 result.append(res["data"][0]['station']['name'])
                 result.append(pd.to_datetime(res["data"][0]['time']['stime']))
-            ]
 
             # Ensure AQI is a number
             try:
