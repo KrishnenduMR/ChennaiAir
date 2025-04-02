@@ -172,8 +172,8 @@ def retrain_model(order, seasonal_order, station_daily_aqi):
                 for i in range(5):
                     csv_writer.writerow([predictions.index[i].date(), round(predictions.values[i])])
                 # Log the predictions to view in future.
-                print(f'The forecast data has been written to {FORECAST_SECTOR_51_DAILY_AQI}')
-                logger.info(f'The forecast data has been written to {FORECAST_SECTOR_51_DAILY_AQI}')
+                print(f'The forecast data has been written to {FORECAST_alandur_DAILY_AQI}')
+                logger.info(f'The forecast data has been written to {FORECAST_alandur_DAILY_AQI}')
         else:
             print(f'retrain_model function - The forecast data has NaNs.')
             logger.info(f'retrain_model function - The forecast data has NaNs.')
@@ -192,7 +192,7 @@ def writeData(station_hourly_aqi, station_daily_aqi):
     '''
     # Hourly data preprocessing
     df_api = pd.read_csv(station_hourly_aqi)
-    df_api['datetie'] = pd.to_datetime(df_api['datetime])
+    df_api['datetime'] = pd.to_datetime(df_api['datetime'])
     df_api.set_index('datetime', inplace=True)
     df_api = df_api['AQI'].resample('D').mean()
     df_api = pd.DataFrame(df_api)
@@ -257,4 +257,4 @@ if __name__ == "__main__":
     print("Calling writeData & retrain_model functions. Time => ", datetime.now().hour, " yesterday_present=> ", yesterday_present)
     logger.info("Calling writeData & retrain_model functions.")
     writeData(alandur_OUTPUT, alandur_DAILY_AQI)
-    retrain_model(ORDER, SEASONAL_ORDER, alandur_DAILY_AQI
+    retrain_model(ORDER, SEASONAL_ORDER, alandur_DAILY_AQI)
