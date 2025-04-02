@@ -248,7 +248,7 @@ if __name__ == "__main__":
     yesterday = today - timedelta(days=1)
     yesterday_present = daily_AQI.index[-1] == pd.Timestamp(yesterday)
 
-    # if (not yesterday_present) or (datetime.now().hour == 1):     # It means 1 AM IST (20 is GitHub action runner time)
+    if (not yesterday_present) or (datetime.now().hour == 1):     # It means 1 AM IST (20 is GitHub action runner time)
     print("Calling writeData & retrain_model functions. Time => ", datetime.now().hour, " yesterday_present=> ", yesterday_present)
     logger.info("Calling writeData & retrain_model functions.")
     writeData(alandur_OUTPUT, alandur_DAILY_AQI)
