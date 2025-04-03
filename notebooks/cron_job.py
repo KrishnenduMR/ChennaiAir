@@ -80,7 +80,7 @@ def setData(station, output_file, logger, TOKEN):
             
             # Prevent duplicate timestamps
             new_timestamp = (res["data"][0]['time']['stime'])
-            csv_file_path = output_file + '.csv'
+            csv_file_path = output_file
 
             # Check if the new timestamp is already present
             with open(csv_file_path, 'r') as csv_file:
@@ -180,53 +180,44 @@ def retrain_model(order, seasonal_order, station_daily_aqi):
 
 # 🔹 Convert Hourly AQI to Daily AQI
 def writeData(station_hourly_aqi, station_daily_aqi):
-    '''
-    This function is called daily once at 1 AM. 
-    It preprocesses the data, computes the daily AQI from hourly AQI csv files and writes to the daily csv files.
-    This data is consumed by retrain_model function.
-    '''
-    # Hourly data preprocessing
-    df_api = pd.read_csv(station_hourly_aqi)
-    df_api['datetime'] = pd.to_datetime(df_api['datetime'])
-    df_api.set_index('datetime', inplace=True)
-    df_api = df_api['AQI'].resample('D').mean()
-    df_api = pd.DataFrame(df_api)
-    print(f"df_api columns {df_api.columns}")
-    logger.info(f"df_api columns {df_api.columns}")
-    df_api['AQI'] = round(df_api['AQI'])
+    """
+    Updates the daily AQI by taking the mean of today's AQI (not yesterday's).
+    Ensures there are no duplicate rows for today.
+    This function is called at 2 AM, 11 AM, and 5 PM.
+    """
 
+    # Load hourly AQI data
+    df_hourly = pd.read_csv(station_hourly_aqi, parse_dates=['datetime'])
+    df_hourly.columns = ['AQI', 'Station', 'Datetime']
+    df_hourly.set_index('Datetime', inplace=True)
+
+    # Compute today's mean AQI
     today = datetime.now().date()
-    yesterday = today - timedelta(days=1)
-    print(f'today=> {today} & yesterday=> {yesterday}')
-    logger.info(f'today=> {today} & yesterday=> {yesterday}')
+    today_mean = df_hourly[df_hourly.index.date == today]['AQI'].mean()
 
-    # Write it to the Daily data csv file
-    temp_daily_aqi = pd.read_csv(station_daily_aqi)
-    print(f'temp_daily_aqi columns {temp_daily_aqi.columns}')
-    logger.info(f'temp_daily_aqi columns {temp_daily_aqi.columns}')
-                
-    temp_daily_aqi['Datetime'] = pd.to_datetime(temp_daily_aqi['Datetime'])
-    temp_daily_aqi.set_index('Datetime', inplace=True)
+    if not np.isnan(today_mean):
+        # Load existing daily AQI data
+        if os.path.exists(station_daily_aqi):
+            df_daily = pd.read_csv(station_daily_aqi, parse_dates=['Datetime'])
+            df_daily['Datetime'] = df_daily['Datetime'].dt.date  # Convert to date only
 
-    print(f"temp_daily_aqi[{yesterday}]=> {temp_daily_aqi[yesterday:yesterday]}")
-    logger.info(f"temp_daily_aqi[{yesterday}]=> {temp_daily_aqi[yesterday:yesterday]}")
-    
-    try:
-        with open(station_daily_aqi, 'a', newline='') as csv_file:
-            if len(temp_daily_aqi[yesterday:yesterday]) == 0: # Write only if it does not exist already
-                csv_writer = csv.writer(csv_file)
-                aqi = df_api[yesterday:yesterday].AQI.values[0]
-                print(f'yesterday => {yesterday} & AQI => {aqi}')
-                logger.info(f'yesterday => {yesterday} & AQI => {aqi}')
-                if np.isnan(df_api[yesterday:yesterday].AQI.values[0]): # If NaN, take yesterday's value.
-                    aqi = temp_daily_aqi.iloc[-1,1]
-                csv_writer.writerow([yesterday, aqi])
-                print(f'Daily AQI data has been written to {station_daily_aqi}')
-                logger.info(f'Daily AQI data has been written to {station_daily_aqi}')
-        
-    except Exception as e:
-        print(f"writeData function - Exception {type(e).__name__} has occured for station=> {station_daily_aqi}")
-        logger.info(f"writeData function - Exception {type(e).__name__} has occured for station=> {station_daily_aqi}")
+            # Remove today's existing entry if present
+            df_daily = df_daily[df_daily['Datetime'] != today]
+        else:
+            df_daily = pd.DataFrame(columns=['Datetime', 'AQI'])
+
+        # Append today's AQI
+        df_new = pd.DataFrame([[today, round(today_mean, 1)]], columns=['Datetime', 'AQI'])
+        df_daily = pd.concat([df_daily, df_new], ignore_index=True)
+
+        # Save updated data
+        df_daily.to_csv(station_daily_aqi, index=False)
+
+        print(f"Updated daily AQI: {today} => {round(today_mean, 1)}")
+        logger.info(f"Updated daily AQI: {today} => {round(today_mean, 1)}")
+    else:
+        print("writeData: No data available to compute today's AQI.")
+        logger.warning("writeData: No data available to compute today's AQI.")
 
 # 🔹 Main Execution
 if __name__ == "__main__":
@@ -236,19 +227,21 @@ if __name__ == "__main__":
     for station, station_location in stations:
         setData(station, station_location, logger, TOKEN)
 
-     # If the day changes, append it to original data
-    print(f"datetime.now()=> {datetime.now()}")
-    # logger.info(f"datetime.now()=> {datetime.now()}")
-    
+    # Log current time
+    print(f"datetime.now() => {datetime.now()}")
+
+    # Read daily AQI data
     daily_AQI = pd.read_csv(alandur_DAILY_AQI, parse_dates=["Datetime"])
     daily_AQI['Datetime'] = pd.to_datetime(daily_AQI['Datetime'])
     daily_AQI.set_index('Datetime', inplace=True)
-    today = datetime.now().date()
-    yesterday = today - timedelta(days=1)
-    yesterday_present = daily_AQI.index[-1] == pd.Timestamp(yesterday)
 
-    if (not yesterday_present) or (datetime.now().hour == 1):     # It means 1 AM IST (20 is GitHub action runner time)
-        print("Calling writeData & retrain_model functions. Time => ", datetime.now().hour, " yesterday_present=> ", yesterday_present)
-        logger.info("Calling writeData & retrain_model functions.")
-        writeData(alandur_OUTPUT, alandur_DAILY_AQI)
+    # Call writeData every hour
+    print("Calling writeData function. Time =>", datetime.now().hour)
+    logger.info("Calling writeData function.")
+    writeData(alandur_OUTPUT, alandur_DAILY_AQI)
+
+    # Retrain only at 5 AM, 1 PM, and 10 PM
+    if datetime.now().hour in [5, 13, 22]:
+        print("Calling retrain_model function. Time =>", datetime.now().hour)
+        logger.info("Calling retrain_model function.")
         retrain_model(ORDER, SEASONAL_ORDER, alandur_DAILY_AQI)

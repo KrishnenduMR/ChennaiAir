@@ -108,3 +108,39 @@ Datetime
 2025-04-07    45.475492
 Freq: D, Name: predicted_mean, dtype: float64
 
+2025-04-03 12:38:40,715 - __main__ - INFO - Calling writeData & retrain_model functions.
+2025-04-03 12:38:40,723 - __main__ - INFO - df_api columns Index(['AQI'], dtype='object')
+2025-04-03 12:38:40,724 - __main__ - INFO - today=> 2025-04-03 & yesterday=> 2025-04-02
+2025-04-03 12:38:40,725 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'AQI'], dtype='object')
+2025-04-03 12:38:40,733 - __main__ - INFO - temp_daily_aqi[2025-04-02]=>              AQI
+Datetime        
+2025-04-02  41.0
+2025-04-03 12:38:40,737 - __main__ - INFO - Re-training the model & train_end is 2025-03-28 00:00:00
+2025-04-03 12:38:50,416 - __main__ - INFO - Retrained the model & MAPE is 7.71%
+2025-04-03 12:38:50,417 - __main__ - INFO - Retrained the model & MAE is 2.919846126959372
+2025-04-03 12:38:57,967 - __main__ - INFO - Forecast=> 
+2025-04-03    41.051056
+2025-04-04    40.221809
+2025-04-05    42.287355
+2025-04-06    41.830697
+2025-04-07    41.653544
+Freq: D, Name: predicted_mean, dtype: float64
+
+2025-04-03 14:07:41,000 - __main__ - INFO - Timestamp 2025-04-03 19:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-04-03 14:07:41,472 - __main__ - INFO - station=> Alandur Bus Depot, result => ['34', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-04-03 19:00:00')]
+2025-04-03 14:07:41,473 - __main__ - INFO - The hourly data has been written to ../static/data/alandur_cron_output.csv with Timestamp: 2025-04-03 19:00:00
+2025-04-03 14:07:41,946 - __main__ - INFO - Timestamp 2025-04-03 19:00:00 already present in ../data/cron_job_data/manali_cron_output.csv, not appending.
+2025-04-03 14:07:41,952 - __main__ - INFO - Calling writeData function.
+2025-04-03 14:07:41,962 - __main__ - INFO - Updated daily AQI: 2025-04-03 => 34.0
+2025-04-03 14:07:41,962 - __main__ - INFO - Calling retrain_model function.
+2025-04-03 14:07:41,966 - __main__ - INFO - Re-training the model & train_end is 2025-03-29 00:00:00
+2025-04-03 14:07:53,534 - __main__ - INFO - Retrained the model & MAPE is 6.82%
+2025-04-03 14:07:53,535 - __main__ - INFO - Retrained the model & MAE is 2.5874246676612573
+2025-04-03 14:08:05,036 - __main__ - INFO - Forecast=> 
+2025-04-04    34.112452
+2025-04-05    37.376316
+2025-04-06    38.526652
+2025-04-07    38.973040
+2025-04-08    39.285447
+Freq: D, Name: predicted_mean, dtype: float64
+2025-04-03 14:08:05,037 - __main__ - INFO - The forecast data has been written to ../static/data/forecast_alandur_daily_aqi.csv
