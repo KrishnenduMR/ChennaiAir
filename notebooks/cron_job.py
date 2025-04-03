@@ -215,13 +215,12 @@ def writeData(station_hourly_aqi, station_daily_aqi):
         with open(station_daily_aqi, 'a', newline='') as csv_file:
             if len(temp_daily_aqi[yesterday:yesterday]) == 0: # Write only if it does not exist already
                 csv_writer = csv.writer(csv_file)
-                index = temp_daily_aqi.iloc[-1,0] + 1 # Add 1 to yesterday's index
                 aqi = df_api[yesterday:yesterday].AQI.values[0]
-                print(f'Index => {index}, yesterday => {yesterday} & AQI => {aqi}')
-                logger.info(f'Index => {index}, yesterday => {yesterday} & AQI => {aqi}')
+                print(f'yesterday => {yesterday} & AQI => {aqi}')
+                logger.info(f'yesterday => {yesterday} & AQI => {aqi}')
                 if np.isnan(df_api[yesterday:yesterday].AQI.values[0]): # If NaN, take yesterday's value.
                     aqi = temp_daily_aqi.iloc[-1,1]
-                csv_writer.writerow([index, yesterday, aqi])
+                csv_writer.writerow([yesterday, aqi])
                 print(f'Daily AQI data has been written to {station_daily_aqi}')
                 logger.info(f'Daily AQI data has been written to {station_daily_aqi}')
         
@@ -248,8 +247,8 @@ if __name__ == "__main__":
     yesterday = today - timedelta(days=1)
     yesterday_present = daily_AQI.index[-1] == pd.Timestamp(yesterday)
 
-    if (not yesterday_present) or (datetime.now().hour == 1):     # It means 1 AM IST (20 is GitHub action runner time)
-      print("Calling writeData & retrain_model functions. Time => ", datetime.now().hour, " yesterday_present=> ", yesterday_present)
-      logger.info("Calling writeData & retrain_model functions.")
-      writeData(alandur_OUTPUT, alandur_DAILY_AQI)
-      retrain_model(ORDER, SEASONAL_ORDER, alandur_DAILY_AQI)
+    # if (not yesterday_present) or (datetime.now().hour == 1):     # It means 1 AM IST (20 is GitHub action runner time)
+    print("Calling writeData & retrain_model functions. Time => ", datetime.now().hour, " yesterday_present=> ", yesterday_present)
+    logger.info("Calling writeData & retrain_model functions.")
+    writeData(alandur_OUTPUT, alandur_DAILY_AQI)
+    retrain_model(ORDER, SEASONAL_ORDER, alandur_DAILY_AQI)
