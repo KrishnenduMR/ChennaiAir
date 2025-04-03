@@ -17,7 +17,7 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    color: #ffffff;
 }
 
 a,
@@ -29,7 +29,7 @@ a:focus {
 }
 
 .bg-primary {
-    background-color: #558bca !important;
+    background-color: #ffffff !important;
 }
 
 .dropdown-menu {
@@ -503,7 +503,7 @@ input {
 .ticker-container {
     width: 100%;
     overflow: hidden;
-    background: #221fe4; /* White background */
+    background: #0951d8; /* White background */
     color: white; /* Black text */
     position: fixed;
     top: 0; /* At the very top */
