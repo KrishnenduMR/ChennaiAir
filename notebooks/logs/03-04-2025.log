@@ -149,3 +149,11 @@ Freq: D, Name: predicted_mean, dtype: float64
 2025-04-03 14:23:01,385 - __main__ - INFO - Timestamp 2025-04-03 19:00:00 already present in ../data/cron_job_data/manali_cron_output.csv, not appending.
 2025-04-03 14:23:01,391 - __main__ - INFO - Calling writeData function.
 2025-04-03 14:23:01,400 - __main__ - INFO - Updated daily AQI: 2025-04-03 => 34.0
+2025-04-03 15:22:45,063 - __main__ - INFO - station=> Velachery Res. Area, result => ['71', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-04-03 20:00:00')]
+2025-04-03 15:22:45,064 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/velachery_cron_output.csv with Timestamp: 2025-04-03 20:00:00
+2025-04-03 15:22:45,508 - __main__ - INFO - station=> Alandur Bus Depot, result => ['34', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-04-03 20:00:00')]
+2025-04-03 15:22:45,509 - __main__ - INFO - The hourly data has been written to ../static/data/alandur_cron_output.csv with Timestamp: 2025-04-03 20:00:00
+2025-04-03 15:22:45,943 - __main__ - INFO - station=> Manali Village, result => ['56', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-04-03 20:00:00')]
+2025-04-03 15:22:45,943 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-04-03 20:00:00
+2025-04-03 15:22:45,948 - __main__ - INFO - Calling writeData function.
+2025-04-03 15:22:45,957 - __main__ - INFO - Updated daily AQI: 2025-04-03 => 34.0
