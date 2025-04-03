@@ -144,3 +144,8 @@ Freq: D, Name: predicted_mean, dtype: float64
 2025-04-08    39.285447
 Freq: D, Name: predicted_mean, dtype: float64
 2025-04-03 14:08:05,037 - __main__ - INFO - The forecast data has been written to ../static/data/forecast_alandur_daily_aqi.csv
+2025-04-03 14:23:00,130 - __main__ - INFO - Timestamp 2025-04-03 19:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-04-03 14:23:00,765 - __main__ - INFO - Timestamp 2025-04-03 19:00:00 already present in ../static/data/alandur_cron_output.csv, not appending.
+2025-04-03 14:23:01,385 - __main__ - INFO - Timestamp 2025-04-03 19:00:00 already present in ../data/cron_job_data/manali_cron_output.csv, not appending.
+2025-04-03 14:23:01,391 - __main__ - INFO - Calling writeData function.
+2025-04-03 14:23:01,400 - __main__ - INFO - Updated daily AQI: 2025-04-03 => 34.0
