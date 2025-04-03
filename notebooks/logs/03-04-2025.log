@@ -1,0 +1,92 @@
+2025-04-03 03:49:30,525 - __main__ - INFO - Calling writeData & retrain_model functions.
+2025-04-03 03:49:30,530 - __main__ - INFO - df_api columns Index(['AQI'], dtype='object')
+2025-04-03 03:49:30,530 - __main__ - INFO - today=> 2025-04-03 & yesterday=> 2025-04-02
+2025-04-03 03:49:30,531 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'AQI'], dtype='object')
+2025-04-03 03:49:30,534 - __main__ - INFO - temp_daily_aqi[2025-04-02]=> Empty DataFrame
+Columns: [AQI]
+Index: []
+2025-04-03 03:49:30,534 - __main__ - INFO - yesterday => 2025-04-02 & AQI => 41.0
+2025-04-03 03:49:30,534 - __main__ - INFO - Daily AQI data has been written to ../static/data/alandur_daily.csv
+2025-04-03 03:49:30,539 - __main__ - INFO - Re-training the model & train_end is 2025-03-28 00:00:00
+2025-04-03 03:49:40,576 - __main__ - INFO - Retrained the model & MAPE is 20.76%
+2025-04-03 03:49:40,577 - __main__ - INFO - Retrained the model & MAE is 8.02433420590594
+2025-04-03 03:49:54,264 - __main__ - INFO - Forecast=> 
+2025-04-03    42.196515
+2025-04-04    43.464509
+2025-04-05    44.540156
+2025-04-06    45.324775
+2025-04-07    45.475492
+Freq: D, Name: predicted_mean, dtype: float64
+2025-04-03 03:49:54,264 - __main__ - INFO - The forecast data has been written to ../static/data/forecast_alandur_daily_aqi.csv
+2025-04-03 04:27:43,115 - __main__ - INFO - Calling writeData & retrain_model functions.
+2025-04-03 04:27:43,120 - __main__ - INFO - df_api columns Index(['AQI'], dtype='object')
+2025-04-03 04:27:43,120 - __main__ - INFO - today=> 2025-04-03 & yesterday=> 2025-04-02
+2025-04-03 04:27:43,122 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'AQI'], dtype='object')
+2025-04-03 04:27:43,127 - __main__ - INFO - temp_daily_aqi[2025-04-02]=>              AQI
+Datetime        
+2025-04-02  41.0
+2025-04-03 04:27:43,131 - __main__ - INFO - Re-training the model & train_end is 2025-03-28 00:00:00
+2025-04-03 04:27:53,058 - __main__ - INFO - Retrained the model & MAPE is 20.76%
+2025-04-03 04:27:53,059 - __main__ - INFO - Retrained the model & MAE is 8.02433420590594
+2025-04-03 04:28:06,931 - __main__ - INFO - Forecast=> 
+2025-04-03    42.196515
+2025-04-04    43.464509
+2025-04-05    44.540156
+2025-04-06    45.324775
+2025-04-07    45.475492
+Freq: D, Name: predicted_mean, dtype: float64
+2025-04-03 04:28:06,931 - __main__ - INFO - The forecast data has been written to ../static/data/forecast_alandur_daily_aqi.csv
+2025-04-03 05:22:32,136 - __main__ - INFO - Calling writeData & retrain_model functions.
+2025-04-03 05:22:32,141 - __main__ - INFO - df_api columns Index(['AQI'], dtype='object')
+2025-04-03 05:22:32,141 - __main__ - INFO - today=> 2025-04-03 & yesterday=> 2025-04-02
+2025-04-03 05:22:32,142 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'AQI'], dtype='object')
+2025-04-03 05:22:32,148 - __main__ - INFO - temp_daily_aqi[2025-04-02]=>              AQI
+Datetime        
+2025-04-02  41.0
+2025-04-03 05:22:32,152 - __main__ - INFO - Re-training the model & train_end is 2025-03-28 00:00:00
+2025-04-03 05:22:42,070 - __main__ - INFO - Retrained the model & MAPE is 20.76%
+2025-04-03 05:22:42,071 - __main__ - INFO - Retrained the model & MAE is 8.02433420590594
+2025-04-03 05:22:55,707 - __main__ - INFO - Forecast=> 
+2025-04-03    42.196515
+2025-04-04    43.464509
+2025-04-05    44.540156
+2025-04-06    45.324775
+2025-04-07    45.475492
+Freq: D, Name: predicted_mean, dtype: float64
+2025-04-03 05:22:55,707 - __main__ - INFO - The forecast data has been written to ../static/data/forecast_alandur_daily_aqi.csv
+2025-04-03 06:32:14,477 - __main__ - INFO - Calling writeData & retrain_model functions.
+2025-04-03 06:32:14,482 - __main__ - INFO - df_api columns Index(['AQI'], dtype='object')
+2025-04-03 06:32:14,483 - __main__ - INFO - today=> 2025-04-03 & yesterday=> 2025-04-02
+2025-04-03 06:32:14,484 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'AQI'], dtype='object')
+2025-04-03 06:32:14,489 - __main__ - INFO - temp_daily_aqi[2025-04-02]=>              AQI
+Datetime        
+2025-04-02  41.0
+2025-04-03 06:32:14,494 - __main__ - INFO - Re-training the model & train_end is 2025-03-28 00:00:00
+2025-04-03 06:32:24,488 - __main__ - INFO - Retrained the model & MAPE is 20.76%
+2025-04-03 06:32:24,488 - __main__ - INFO - Retrained the model & MAE is 8.02433420590594
+2025-04-03 06:32:38,308 - __main__ - INFO - Forecast=> 
+2025-04-03    42.196515
+2025-04-04    43.464509
+2025-04-05    44.540156
+2025-04-06    45.324775
+2025-04-07    45.475492
+Freq: D, Name: predicted_mean, dtype: float64
+2025-04-03 06:32:38,308 - __main__ - INFO - The forecast data has been written to ../static/data/forecast_alandur_daily_aqi.csv
+2025-04-03 07:22:31,168 - __main__ - INFO - Calling writeData & retrain_model functions.
+2025-04-03 07:22:31,173 - __main__ - INFO - df_api columns Index(['AQI'], dtype='object')
+2025-04-03 07:22:31,173 - __main__ - INFO - today=> 2025-04-03 & yesterday=> 2025-04-02
+2025-04-03 07:22:31,174 - __main__ - INFO - temp_daily_aqi columns Index(['Datetime', 'AQI'], dtype='object')
+2025-04-03 07:22:31,180 - __main__ - INFO - temp_daily_aqi[2025-04-02]=>              AQI
+Datetime        
+2025-04-02  41.0
+2025-04-03 07:22:31,184 - __main__ - INFO - Re-training the model & train_end is 2025-03-28 00:00:00
+2025-04-03 07:22:41,140 - __main__ - INFO - Retrained the model & MAPE is 20.76%
+2025-04-03 07:22:41,141 - __main__ - INFO - Retrained the model & MAE is 8.02433420590594
+2025-04-03 07:22:54,881 - __main__ - INFO - Forecast=> 
+2025-04-03    42.196515
+2025-04-04    43.464509
+2025-04-05    44.540156
+2025-04-06    45.324775
+2025-04-07    45.475492
+Freq: D, Name: predicted_mean, dtype: float64
+2025-04-03 07:22:54,881 - __main__ - INFO - The forecast data has been written to ../static/data/forecast_alandur_daily_aqi.csv

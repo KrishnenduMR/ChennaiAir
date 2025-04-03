@@ -2,8 +2,11 @@ name: Run Cron Job
 
 on:
   schedule:
-    - cron: '*/10 * * * *'  # Runs every 10 minutes
+    - cron: '0 * * * *'  # Runs at the start of every hour
   workflow_dispatch:  # Allows manual trigger
+
+permissions:
+  contents: write  # Allows the workflow to push changes
 
 jobs:
   run-script:
@@ -25,15 +28,19 @@ jobs:
 
       - name: Pull latest changes
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git pull origin main || true  # Ignore errors if there's nothing to pull
 
       - name: Run cron job script
-        run: python /workspaces/ChennaiAir/notebooks/cron_job.py
+        run: |
+             cd ${{ github.workspace }}/notebooks
+             python cron_job.py
 
       - name: Commit and push changes
         run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "Auto-update logs and data [skip ci]" || exit 0
           git push
