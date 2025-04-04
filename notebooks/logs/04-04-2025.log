@@ -176,3 +176,23 @@ Freq: D, Name: predicted_mean, dtype: float64
 2025-04-04 21:20:56,808 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-04-05 02:00:00
 2025-04-04 21:20:56,814 - __main__ - INFO - Calling writeData function.
 2025-04-04 21:20:56,825 - __main__ - INFO - Updated daily AQI: 2025-04-04 => 34.5
+2025-04-04 22:21:11,534 - __main__ - INFO - station=> Velachery Res. Area, result => ['55', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-04-05 03:00:00')]
+2025-04-04 22:21:11,724 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/velachery_cron_output.csv with Timestamp: 2025-04-05 03:00:00
+2025-04-04 22:21:12,683 - __main__ - INFO - station=> Alandur Bus Depot, result => ['37', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-04-05 03:00:00')]
+2025-04-04 22:21:12,683 - __main__ - INFO - The hourly data has been written to ../static/data/alandur_cron_output.csv with Timestamp: 2025-04-05 03:00:00
+2025-04-04 22:21:13,362 - __main__ - INFO - station=> Manali Village, result => ['70', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-04-05 03:00:00')]
+2025-04-04 22:21:13,362 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-04-05 03:00:00
+2025-04-04 22:21:13,368 - __main__ - INFO - Calling writeData function.
+2025-04-04 22:21:13,378 - __main__ - INFO - Updated daily AQI: 2025-04-04 => 34.5
+2025-04-04 22:21:13,378 - __main__ - INFO - Calling retrain_model function.
+2025-04-04 22:21:13,382 - __main__ - INFO - Re-training the model & train_end is 2025-03-30 00:00:00
+2025-04-04 22:21:19,468 - __main__ - INFO - Retrained the model & MAPE is 9.64%
+2025-04-04 22:21:19,469 - __main__ - INFO - Retrained the model & MAE is 3.4588500321474998
+2025-04-04 22:21:28,366 - __main__ - INFO - Forecast=> 
+2025-04-05    38.248587
+2025-04-06    39.343276
+2025-04-07    39.816794
+2025-04-08    40.296168
+2025-04-09    39.755036
+Freq: D, Name: predicted_mean, dtype: float64
+2025-04-04 22:21:28,366 - __main__ - INFO - The forecast data has been written to ../static/data/forecast_alandur_daily_aqi.csv
