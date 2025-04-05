@@ -22,3 +22,8 @@
 2025-04-05 03:36:13,098 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-04-05 09:00:00
 2025-04-05 03:36:13,103 - __main__ - INFO - Calling writeData function.
 2025-04-05 03:36:13,113 - __main__ - INFO - Updated daily AQI: 2025-04-05 => 35.0
+2025-04-05 04:26:26,156 - __main__ - INFO - Timestamp 2025-04-05 09:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-04-05 04:26:27,214 - __main__ - INFO - Timestamp 2025-04-05 09:00:00 already present in ../static/data/alandur_cron_output.csv, not appending.
+2025-04-05 04:26:28,109 - __main__ - INFO - Timestamp 2025-04-05 09:00:00 already present in ../data/cron_job_data/manali_cron_output.csv, not appending.
+2025-04-05 04:26:28,171 - __main__ - INFO - Calling writeData function.
+2025-04-05 04:26:28,180 - __main__ - INFO - Updated daily AQI: 2025-04-05 => 35.0
