@@ -102,3 +102,21 @@ Freq: D, Name: predicted_mean, dtype: float64
 2025-04-05 12:39:45,262 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-04-05 17:00:00
 2025-04-05 12:39:45,267 - __main__ - INFO - Calling writeData function.
 2025-04-05 12:39:45,276 - __main__ - INFO - Updated daily AQI: 2025-04-05 => 34.0
+2025-04-05 13:25:59,193 - __main__ - INFO - Timestamp 2025-04-05 18:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-04-05 13:25:59,828 - __main__ - INFO - Timestamp 2025-04-05 18:00:00 already present in ../static/data/alandur_cron_output.csv, not appending.
+2025-04-05 13:26:00,470 - __main__ - INFO - station=> Manali Village, result => ['37', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-04-05 18:00:00')]
+2025-04-05 13:26:00,470 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-04-05 18:00:00
+2025-04-05 13:26:00,476 - __main__ - INFO - Calling writeData function.
+2025-04-05 13:26:00,485 - __main__ - INFO - Updated daily AQI: 2025-04-05 => 34.0
+2025-04-05 13:26:00,486 - __main__ - INFO - Calling retrain_model function.
+2025-04-05 13:26:00,490 - __main__ - INFO - Re-training the model & train_end is 2025-03-31 00:00:00
+2025-04-05 13:26:16,992 - __main__ - INFO - Retrained the model & MAPE is 12.62%
+2025-04-05 13:26:16,993 - __main__ - INFO - Retrained the model & MAE is 4.53472788238073
+2025-04-05 13:26:24,681 - __main__ - INFO - Forecast=> 
+2025-04-06    37.005658
+2025-04-07    38.645653
+2025-04-08    39.594777
+2025-04-09    40.166008
+2025-04-10    39.822500
+Freq: D, Name: predicted_mean, dtype: float64
+2025-04-05 13:26:24,682 - __main__ - INFO - The forecast data has been written to ../static/data/forecast_alandur_daily_aqi.csv
