@@ -50,3 +50,9 @@ Freq: D, Name: predicted_mean, dtype: float64
 2025-04-08 06:32:53,685 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-04-08 12:00:00
 2025-04-08 06:32:53,690 - __main__ - INFO - Calling writeData function.
 2025-04-08 06:32:53,700 - __main__ - INFO - Updated daily AQI: 2025-04-08 => 37.6
+2025-04-08 07:23:05,864 - __main__ - INFO - station=> Velachery Res. Area, result => ['69', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-04-08 12:00:00')]
+2025-04-08 07:23:05,865 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/velachery_cron_output.csv with Timestamp: 2025-04-08 12:00:00
+2025-04-08 07:23:06,521 - __main__ - INFO - Timestamp 2025-04-08 12:00:00 already present in ../static/data/alandur_cron_output.csv, not appending.
+2025-04-08 07:23:07,176 - __main__ - INFO - Timestamp 2025-04-08 12:00:00 already present in ../data/cron_job_data/manali_cron_output.csv, not appending.
+2025-04-08 07:23:07,182 - __main__ - INFO - Calling writeData function.
+2025-04-08 07:23:07,192 - __main__ - INFO - Updated daily AQI: 2025-04-08 => 37.6
