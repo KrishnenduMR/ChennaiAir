@@ -92,3 +92,22 @@ Freq: D, Name: predicted_mean, dtype: float64
 2025-04-12 12:39:56,019 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-04-12 17:00:00
 2025-04-12 12:39:56,024 - __main__ - INFO - Calling writeData function.
 2025-04-12 12:39:56,033 - __main__ - INFO - Updated daily AQI: 2025-04-12 => 37.4
+2025-04-12 13:25:37,510 - __main__ - INFO - Timestamp 2025-04-11 17:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-04-12 13:25:38,663 - __main__ - INFO - station=> Alandur Bus Depot, result => ['41', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-04-12 18:00:00')]
+2025-04-12 13:25:38,663 - __main__ - INFO - The hourly data has been written to ../static/data/alandur_cron_output.csv with Timestamp: 2025-04-12 18:00:00
+2025-04-12 13:25:39,333 - __main__ - INFO - station=> Manali Village, result => ['103', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-04-12 18:00:00')]
+2025-04-12 13:25:39,333 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-04-12 18:00:00
+2025-04-12 13:25:39,339 - __main__ - INFO - Calling writeData function.
+2025-04-12 13:25:39,348 - __main__ - INFO - Updated daily AQI: 2025-04-12 => 37.6
+2025-04-12 13:25:39,349 - __main__ - INFO - Calling retrain_model function.
+2025-04-12 13:25:39,353 - __main__ - INFO - Re-training the model & train_end is 2025-04-07 00:00:00
+2025-04-12 13:25:47,515 - __main__ - INFO - Retrained the model & MAPE is 7.97%
+2025-04-12 13:25:47,515 - __main__ - INFO - Retrained the model & MAE is 3.003286323047013
+2025-04-12 13:25:59,222 - __main__ - INFO - Forecast=> 
+2025-04-13    36.623928
+2025-04-14    36.373270
+2025-04-15    36.796970
+2025-04-16    36.808764
+2025-04-17    36.713391
+Freq: D, Name: predicted_mean, dtype: float64
+2025-04-12 13:25:59,222 - __main__ - INFO - The forecast data has been written to ../static/data/forecast_alandur_daily_aqi.csv
