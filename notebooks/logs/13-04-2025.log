@@ -152,3 +152,22 @@ Freq: D, Name: predicted_mean, dtype: float64
 2025-04-13 21:20:40,791 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-04-14 02:00:00
 2025-04-13 21:20:40,797 - __main__ - INFO - Calling writeData function.
 2025-04-13 21:20:40,807 - __main__ - INFO - Updated daily AQI: 2025-04-13 => 33.3
+2025-04-13 22:20:45,641 - __main__ - INFO - Timestamp 2025-04-11 17:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-04-13 22:20:46,085 - __main__ - INFO - station=> Alandur Bus Depot, result => ['9', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-04-14 03:00:00')]
+2025-04-13 22:20:46,085 - __main__ - INFO - The hourly data has been written to ../static/data/alandur_cron_output.csv with Timestamp: 2025-04-14 03:00:00
+2025-04-13 22:20:46,525 - __main__ - INFO - station=> Manali Village, result => ['98', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-04-14 03:00:00')]
+2025-04-13 22:20:46,525 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-04-14 03:00:00
+2025-04-13 22:20:46,531 - __main__ - INFO - Calling writeData function.
+2025-04-13 22:20:46,541 - __main__ - INFO - Updated daily AQI: 2025-04-13 => 33.3
+2025-04-13 22:20:46,541 - __main__ - INFO - Calling retrain_model function.
+2025-04-13 22:20:46,545 - __main__ - INFO - Re-training the model & train_end is 2025-04-08 00:00:00
+2025-04-13 22:20:56,223 - __main__ - INFO - Retrained the model & MAPE is 8.1%
+2025-04-13 22:20:56,224 - __main__ - INFO - Retrained the model & MAE is 3.016614734150784
+2025-04-13 22:21:08,086 - __main__ - INFO - Forecast=> 
+2025-04-14    34.112898
+2025-04-15    35.735564
+2025-04-16    36.615442
+2025-04-17    37.090855
+2025-04-18    36.835090
+Freq: D, Name: predicted_mean, dtype: float64
+2025-04-13 22:21:08,086 - __main__ - INFO - The forecast data has been written to ../static/data/forecast_alandur_daily_aqi.csv
