@@ -19,3 +19,22 @@
 2025-04-14 04:27:34,628 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-04-14 09:00:00
 2025-04-14 04:27:34,634 - __main__ - INFO - Calling writeData function.
 2025-04-14 04:27:34,643 - __main__ - INFO - Updated daily AQI: 2025-04-14 => 7.4
+2025-04-14 05:23:50,359 - __main__ - INFO - Timestamp 2025-04-11 17:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-04-14 05:23:51,026 - __main__ - INFO - station=> Alandur Bus Depot, result => ['8', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-04-14 10:00:00')]
+2025-04-14 05:23:51,026 - __main__ - INFO - The hourly data has been written to ../static/data/alandur_cron_output.csv with Timestamp: 2025-04-14 10:00:00
+2025-04-14 05:23:51,697 - __main__ - INFO - station=> Manali Village, result => ['34', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-04-14 10:00:00')]
+2025-04-14 05:23:51,697 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-04-14 10:00:00
+2025-04-14 05:23:51,703 - __main__ - INFO - Calling writeData function.
+2025-04-14 05:23:51,713 - __main__ - INFO - Updated daily AQI: 2025-04-14 => 7.4
+2025-04-14 05:23:51,713 - __main__ - INFO - Calling retrain_model function.
+2025-04-14 05:23:51,717 - __main__ - INFO - Re-training the model & train_end is 2025-04-09 00:00:00
+2025-04-14 05:23:59,923 - __main__ - INFO - Retrained the model & MAPE is 88.97%
+2025-04-14 05:23:59,923 - __main__ - INFO - Retrained the model & MAE is 8.482558136741021
+2025-04-14 05:24:10,207 - __main__ - INFO - Forecast=> 
+2025-04-15    17.187075
+2025-04-16    26.009816
+2025-04-17    31.239594
+2025-04-18    33.027865
+2025-04-19    32.086493
+Freq: D, Name: predicted_mean, dtype: float64
+2025-04-14 05:24:10,208 - __main__ - INFO - The forecast data has been written to ../static/data/forecast_alandur_daily_aqi.csv
