@@ -113,3 +113,8 @@ Freq: D, Name: predicted_mean, dtype: float64
 2025-04-15 15:25:13,571 - __main__ - INFO - Timestamp 2025-04-15 16:00:00 already present in ../data/cron_job_data/manali_cron_output.csv, not appending.
 2025-04-15 15:25:13,577 - __main__ - INFO - Calling writeData function.
 2025-04-15 15:25:13,613 - __main__ - INFO - Updated daily AQI: 2025-04-15 => 6.1
+2025-04-15 16:27:32,102 - __main__ - INFO - Timestamp 2025-04-11 17:00:00 already present in ../data/cron_job_data/velachery_cron_output.csv, not appending.
+2025-04-15 16:27:33,258 - __main__ - INFO - Timestamp 2025-04-15 18:00:00 already present in ../static/data/alandur_cron_output.csv, not appending.
+2025-04-15 16:27:33,925 - __main__ - INFO - Timestamp 2025-04-15 16:00:00 already present in ../data/cron_job_data/manali_cron_output.csv, not appending.
+2025-04-15 16:27:33,930 - __main__ - INFO - Calling writeData function.
+2025-04-15 16:27:33,940 - __main__ - INFO - Updated daily AQI: 2025-04-15 => 6.1
