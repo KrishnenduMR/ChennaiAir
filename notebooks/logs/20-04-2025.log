@@ -76,3 +76,19 @@ Freq: D, Name: predicted_mean, dtype: float64
 2025-04-20 12:40:35,671 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-04-20 18:00:00
 2025-04-20 12:40:35,678 - __main__ - INFO - Calling writeData function.
 2025-04-20 12:40:35,689 - __main__ - INFO - Updated daily AQI: 2025-04-20 => 34.2
+2025-04-20 13:28:51,405 - __main__ - INFO - Timestamp 2025-04-20 18:00:00 already present in ../static/data/alandur_cron_output.csv, not appending.
+2025-04-20 13:28:52,071 - __main__ - INFO - Timestamp 2025-04-20 18:00:00 already present in ../data/cron_job_data/manali_cron_output.csv, not appending.
+2025-04-20 13:28:52,077 - __main__ - INFO - Calling writeData function.
+2025-04-20 13:28:52,087 - __main__ - INFO - Updated daily AQI: 2025-04-20 => 34.2
+2025-04-20 13:28:52,087 - __main__ - INFO - Calling retrain_model function.
+2025-04-20 13:28:52,090 - __main__ - INFO - Re-training the model & train_end is 2025-04-15 00:00:00
+2025-04-20 13:29:00,599 - __main__ - INFO - Retrained the model & MAPE is 58.87%
+2025-04-20 13:29:00,599 - __main__ - INFO - Retrained the model & MAE is 13.295151230479627
+2025-04-20 13:29:09,074 - __main__ - INFO - Forecast=> 
+2025-04-21    30.261950
+2025-04-22    31.234948
+2025-04-23    31.281820
+2025-04-24    30.588115
+2025-04-25    32.842649
+Freq: D, Name: predicted_mean, dtype: float64
+2025-04-20 13:29:09,075 - __main__ - INFO - The forecast data has been written to ../static/data/forecast_alandur_daily_aqi.csv
