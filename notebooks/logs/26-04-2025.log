@@ -6,3 +6,11 @@
 2025-04-26 01:46:03,590 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-04-26 07:00:00
 2025-04-26 01:46:03,596 - __main__ - INFO - Calling writeData function.
 2025-04-26 01:46:03,606 - __main__ - INFO - Updated daily AQI: 2025-04-26 => 33.3
+2025-04-26 03:02:41,682 - __main__ - INFO - station=> Velachery Res. Area, result => ['78', 'Velachery Res. Area, Chennai, Chennai, India', Timestamp('2025-04-26 08:00:00')]
+2025-04-26 03:02:41,682 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/velachery_cron_output.csv with Timestamp: 2025-04-26 08:00:00
+2025-04-26 03:02:42,268 - __main__ - INFO - station=> Alandur Bus Depot, result => ['34', 'Alandur Bus Depot, Chennai, Chennai, India', Timestamp('2025-04-26 08:00:00')]
+2025-04-26 03:02:42,268 - __main__ - INFO - The hourly data has been written to ../static/data/alandur_cron_output.csv with Timestamp: 2025-04-26 08:00:00
+2025-04-26 03:02:42,862 - __main__ - INFO - station=> Manali Village, result => ['55', 'Manali Village, Chennai, Chennai, India', Timestamp('2025-04-26 08:00:00')]
+2025-04-26 03:02:42,862 - __main__ - INFO - The hourly data has been written to ../data/cron_job_data/manali_cron_output.csv with Timestamp: 2025-04-26 08:00:00
+2025-04-26 03:02:42,868 - __main__ - INFO - Calling writeData function.
+2025-04-26 03:02:42,878 - __main__ - INFO - Updated daily AQI: 2025-04-26 => 33.4
